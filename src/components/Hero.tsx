@@ -4,50 +4,14 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-teal-400 via-emerald-500 to-cyan-600 py-16 lg:py-24 overflow-hidden">
-      {/* Custom CSS Dandelion Background */}
-      <div className="absolute inset-0 dandelion-scene">
-        {/* Main Dandelion */}
-        <div className="dandelion-main">
-          <div className="dandelion-stem"></div>
-          <div className="dandelion-head">
-            <div className="dandelion-center"></div>
-            {/* Dandelion seeds radiating outward */}
-            {Array.from({ length: 24 }).map((_, i) => (
-              <div 
-                key={i} 
-                className="dandelion-seed" 
-                style={{ 
-                  transform: `rotate(${i * 15}deg)`,
-                  animationDelay: `${i * 0.1}s`
-                }}
-              >
-                <div className="seed-parachute"></div>
-                <div className="seed-body"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Floating Seeds */}
-        {Array.from({ length: 12 }).map((_, i) => (
-          <div 
-            key={i} 
-            className="floating-seed" 
-            style={{
-              left: `${20 + (i * 7)}%`,
-              top: `${30 + (i % 3) * 20}%`,
-              animationDelay: `${i * 0.8}s`,
-              animationDuration: `${8 + (i % 3) * 2}s`
-            }}
-          >
-            <div className="floating-parachute"></div>
-            <div className="floating-body"></div>
-          </div>
-        ))}
-      </div>
-      
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-transparent to-emerald-900/30"></div>
+    <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 lg:py-24">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url("https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=1200")'
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-emerald-900/70"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
