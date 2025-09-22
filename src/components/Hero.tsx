@@ -9,7 +9,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
         style={{
-          backgroundImage: 'url("/6e44809d32521ab200ef628e0e296e01.jpg")',
+          backgroundImage: 'url("/dandelion-hero.jpg")',
           animationDuration: '8s'
         }}
       ></div>
