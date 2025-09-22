@@ -4,14 +4,27 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 lg:py-24">
+    <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 lg:py-24 overflow-hidden">
+      {/* Animated Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
         style={{
-          backgroundImage: 'url("/ae28e59ab793156ec5bafee3a6c6255d.jpg")'
+          backgroundImage: 'url("/6e44809d32521ab200ef628e0e296e01.jpg")',
+          animationDuration: '8s'
         }}
       ></div>
-      <div className="absolute inset-0 bg-emerald-900/40"></div>
+      
+      {/* Floating Dandelion Seeds Animation */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float-slow"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white/40 rounded-full animate-float-medium"></div>
+        <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-white/25 rounded-full animate-float-fast"></div>
+        <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-white/35 rounded-full animate-float-slow"></div>
+        <div className="absolute top-3/4 left-1/3 w-2 h-2 bg-white/20 rounded-full animate-float-medium"></div>
+        <div className="absolute top-1/5 right-1/5 w-1 h-1 bg-white/30 rounded-full animate-float-fast"></div>
+      </div>
+      
+      <div className="absolute inset-0 bg-emerald-900/30"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
