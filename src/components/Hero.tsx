@@ -4,27 +4,50 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 lg:py-24 overflow-hidden">
-      {/* Animated Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
-        style={{
-          backgroundImage: 'url("/dandelion-hero.jpg")',
-          animationDuration: '8s'
-        }}
-      ></div>
-      
-      {/* Floating Dandelion Seeds Animation */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float-slow"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white/40 rounded-full animate-float-medium"></div>
-        <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-white/25 rounded-full animate-float-fast"></div>
-        <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-white/35 rounded-full animate-float-slow"></div>
-        <div className="absolute top-3/4 left-1/3 w-2 h-2 bg-white/20 rounded-full animate-float-medium"></div>
-        <div className="absolute top-1/5 right-1/5 w-1 h-1 bg-white/30 rounded-full animate-float-fast"></div>
+    <section className="relative bg-gradient-to-br from-teal-400 via-emerald-500 to-cyan-600 py-16 lg:py-24 overflow-hidden">
+      {/* Custom CSS Dandelion Background */}
+      <div className="absolute inset-0 dandelion-scene">
+        {/* Main Dandelion */}
+        <div className="dandelion-main">
+          <div className="dandelion-stem"></div>
+          <div className="dandelion-head">
+            <div className="dandelion-center"></div>
+            {/* Dandelion seeds radiating outward */}
+            {Array.from({ length: 24 }).map((_, i) => (
+              <div 
+                key={i} 
+                className="dandelion-seed" 
+                style={{ 
+                  transform: `rotate(${i * 15}deg)`,
+                  animationDelay: `${i * 0.1}s`
+                }}
+              >
+                <div className="seed-parachute"></div>
+                <div className="seed-body"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Floating Seeds */}
+        {Array.from({ length: 12 }).map((_, i) => (
+          <div 
+            key={i} 
+            className="floating-seed" 
+            style={{
+              left: `${20 + (i * 7)}%`,
+              top: `${30 + (i % 3) * 20}%`,
+              animationDelay: `${i * 0.8}s`,
+              animationDuration: `${8 + (i % 3) * 2}s`
+            }}
+          >
+            <div className="floating-parachute"></div>
+            <div className="floating-body"></div>
+          </div>
+        ))}
       </div>
       
-      <div className="absolute inset-0 bg-emerald-900/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-transparent to-emerald-900/30"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
