@@ -8,7 +8,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/7d5f26af53b0c91a87aff26b4977613e copy.jpg")'
+          backgroundImage: 'url("/ae28e59ab793156ec5bafee3a6c6255d.jpg")'
         }}
       ></div>
       <div className="absolute inset-0 bg-emerald-900/40"></div>
