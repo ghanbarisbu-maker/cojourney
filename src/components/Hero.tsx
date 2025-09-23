@@ -31,20 +31,6 @@ export const Hero = () => {
               Learn More About Our Approach
             </Link>
           </div>
-
-          {/* Highlight CTA Block */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/20">
-            <div className="flex items-center justify-center mb-4">
-              <Sparkles className="w-6 h-6 text-yellow-300 mr-2" />
-              <h4 className="text-xl font-semibold">Start with a Free 15-Minute Online Consultation</h4>
-            </div>
-            <p className="text-emerald-100 mb-6">
-              Meet with a counsellor, share your concerns, and see if our approach feels right — no obligation.
-            </p>
-            <Link to="/contact" className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors inline-block">
-              Book Now
-            </Link>
-          </div>
         </div>
       </div>
     </section>
