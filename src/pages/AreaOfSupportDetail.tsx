@@ -8,7 +8,7 @@ const AreaOfSupportDetail = () => {
   const areaDetails = {
     'trauma-ptsd': {
       title: 'Trauma & PTSD',
-      heroImage: 'https://images.pexels.com/photos/3225527/pexels-photo-3225527.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Trauma can profoundly impact every aspect of your life, affecting your relationships, work, and overall well-being. Post-Traumatic Stress Disorder (PTSD) may develop after experiencing or witnessing a traumatic event, leading to symptoms such as flashbacks, nightmares, severe anxiety, and emotional numbness.
 
 Our trauma-informed approach creates a safe, supportive environment where healing can begin. We understand that trauma affects not just the mind but the entire body, and our treatment addresses both psychological and physiological aspects of trauma recovery.
@@ -19,7 +19,7 @@ Recovery from trauma is possible. With the right support and treatment, you can 
     },
     'anxiety-depression': {
       title: 'Anxiety & Depression',
-      heroImage: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Anxiety and depression are among the most common mental health challenges, affecting millions of people worldwide. These conditions can significantly impact your daily life, relationships, and overall quality of life, but they are highly treatable with the right support.
 
 Anxiety may manifest as persistent worry, panic attacks, social anxiety, or specific phobias. Depression can involve persistent sadness, loss of interest in activities, changes in sleep and appetite, and feelings of hopelessness. Often, these conditions occur together, creating complex challenges that require specialized care.
@@ -32,7 +32,7 @@ Recovery is possible. With proper support and treatment, you can learn to manage
     },
     'personality-disorders': {
       title: 'Personality Disorders',
-      heroImage: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Personality disorders involve long-standing patterns of thinking, feeling, and behaving that can cause significant distress and impact relationships, work, and daily functioning. These patterns typically develop in adolescence or early adulthood and can feel deeply ingrained.
 
 Common personality disorders include Borderline Personality Disorder, Narcissistic Personality Disorder, Avoidant Personality Disorder, and others. Each presents unique challenges, but all can benefit from specialized therapeutic intervention.
@@ -45,7 +45,7 @@ With dedicated therapeutic work, individuals with personality disorders can deve
     },
     'eating-disorders-body-image': {
       title: 'Eating Disorders & Body Image',
-      heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Eating disorders and body image issues can profoundly impact physical health, emotional well-being, and quality of life. These conditions often involve complex relationships with food, weight, and body image that go far beyond simple dietary choices.
 
 Common eating disorders include Anorexia Nervosa, Bulimia Nervosa, Binge Eating Disorder, and Other Specified Feeding or Eating Disorders (OSFED). Body image concerns can occur independently or alongside eating disorders, involving distorted perceptions of one's body and intense dissatisfaction with appearance.
@@ -73,7 +73,7 @@ Remember, seeking help is a sign of strength and self-care, not weakness. With p
     },
     'attachment-relationships': {
       title: 'Attachment & Relationships',
-      heroImage: 'https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Our early relationships shape how we connect with others throughout our lives. Attachment patterns formed in childhood influence our ability to trust, communicate, and maintain healthy relationships in adulthood.
 
 Attachment difficulties may manifest as fear of abandonment, difficulty with intimacy, patterns of unstable relationships, or challenges with emotional regulation in relationships. These patterns often develop as protective responses to early experiences but can create obstacles to forming secure, satisfying connections.
@@ -133,7 +133,7 @@ Whether you're a recent immigrant or have been in the country for years but stil
     },
     'grief-loss': {
       title: 'Grief & Loss',
-      heroImage: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3225527/pexels-photo-3225527.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Grief is a natural response to loss, but it can feel overwhelming and isolating. Loss comes in many forms - death of a loved one, divorce, job loss, health changes, or other significant life transitions. Each person's grief journey is unique, and there's no "right" way to grieve.
 
 Grief can involve a wide range of emotions including sadness, anger, guilt, relief, and numbness. Physical symptoms such as fatigue, sleep disturbances, and changes in appetite are also common. Some people experience complicated grief, where intense grief reactions persist and interfere with daily functioning.
