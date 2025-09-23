@@ -8,7 +8,7 @@ const AreaOfSupportDetail = () => {
   const areaDetails = {
     'trauma-ptsd': {
       title: 'Trauma & PTSD',
-      heroImage: '/cec752b639ba8ad45a58c68e1fe62d7f copy.jpg',
+      heroImage: 'https://images.pexels.com/photos/3225527/pexels-photo-3225527.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Trauma can profoundly impact every aspect of your life, affecting your relationships, work, and overall well-being. Post-Traumatic Stress Disorder (PTSD) may develop after experiencing or witnessing a traumatic event, leading to symptoms such as flashbacks, nightmares, severe anxiety, and emotional numbness.
 
 Our trauma-informed approach creates a safe, supportive environment where healing can begin. We understand that trauma affects not just the mind but the entire body, and our treatment addresses both psychological and physiological aspects of trauma recovery.
