@@ -45,7 +45,7 @@ With dedicated therapeutic work, individuals with personality disorders can deve
     },
     'eating-disorders-body-image': {
       title: 'Eating Disorders & Body Image',
-      heroImage: 'https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Eating disorders and body image issues can profoundly impact physical health, emotional well-being, and quality of life. These conditions often involve complex relationships with food, weight, and body image that go far beyond simple dietary choices.
 
 Common eating disorders include Anorexia Nervosa, Bulimia Nervosa, Binge Eating Disorder, and Other Specified Feeding or Eating Disorders (OSFED). Body image concerns can occur independently or alongside eating disorders, involving distorted perceptions of one's body and intense dissatisfaction with appearance.
@@ -73,7 +73,7 @@ Remember, seeking help is a sign of strength and self-care, not weakness. With p
     },
     'attachment-relationships': {
       title: 'Attachment & Relationships',
-      heroImage: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Our early relationships shape how we connect with others throughout our lives. Attachment patterns formed in childhood influence our ability to trust, communicate, and maintain healthy relationships in adulthood.
 
 Attachment difficulties may manifest as fear of abandonment, difficulty with intimacy, patterns of unstable relationships, or challenges with emotional regulation in relationships. These patterns often develop as protective responses to early experiences but can create obstacles to forming secure, satisfying connections.
@@ -133,7 +133,7 @@ Whether you're a recent immigrant or have been in the country for years but stil
     },
     'grief-loss': {
       title: 'Grief & Loss',
-      heroImage: 'https://images.pexels.com/photos/3225527/pexels-photo-3225527.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `Grief is a natural response to loss, but it can feel overwhelming and isolating. Loss comes in many forms - death of a loved one, divorce, job loss, health changes, or other significant life transitions. Each person's grief journey is unique, and there's no "right" way to grieve.
 
 Grief can involve a wide range of emotions including sadness, anger, guilt, relief, and numbness. Physical symptoms such as fatigue, sleep disturbances, and changes in appetite are also common. Some people experience complicated grief, where intense grief reactions persist and interfere with daily functioning.
@@ -176,14 +176,14 @@ Grief is not something you have to face alone. With support, you can learn to na
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16">
+      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-24 min-h-[500px] flex items-center">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
           style={{
             backgroundImage: `url("${area.heroImage}")`
           }}
         ></div>
-        <div className="absolute inset-0 bg-emerald-900/70"></div>
+        <div className="absolute inset-0 bg-emerald-900/60"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             {area.title}
