@@ -10,6 +10,7 @@ import TeamProfile from './pages/TeamProfile';
 import FeesPage from './pages/FeesPage';
 import ApproachPage from './pages/ApproachPage';
 import ContactPage from './pages/ContactPage';
+import AreaOfSupportDetail from './pages/AreaOfSupportDetail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/fees" element={<FeesPage />} />
             <Route path="/approach" element={<ApproachPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/areas/:slug" element={<AreaOfSupportDetail />} />
           </Routes>
         </main>
         <Footer />

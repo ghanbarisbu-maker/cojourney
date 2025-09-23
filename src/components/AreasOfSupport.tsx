@@ -1,56 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Users, Baby, Globe, Brain, Flower2, Shield, Star } from 'lucide-react';
+import { Heart, Brain, Shield, Users, Baby, Globe, Flower2, User } from 'lucide-react';
 
 const AreasOfSupport = () => {
   const areas = [
     {
       icon: Shield,
       title: 'Trauma & PTSD',
-      description: 'Healing past wounds with care and safety.',
+      description: 'Healing from traumatic experiences with specialized care.',
       slug: 'trauma-ptsd'
     },
     {
+      icon: Brain,
+      title: 'Anxiety & Depression',
+      description: 'Support for managing anxiety and overcoming depression.',
+      slug: 'anxiety-depression'
+    },
+    {
+      icon: User,
+      title: 'Personality Disorders',
+      description: 'Specialized treatment for personality-related challenges.',
+      slug: 'personality-disorders'
+    },
+    {
       icon: Heart,
+      title: 'Eating Disorders & Body Image',
+      description: 'Compassionate care for eating disorders and body image issues.',
+      slug: 'eating-disorders-body-image'
+    },
+    {
+      icon: Baby,
+      title: 'Pregnancy & Postpartum Support',
+      description: 'Mental health support during pregnancy and after birth.',
+      slug: 'pregnancy-postpartum-support'
+    },
+    {
+      icon: Users,
       title: 'Attachment & Relationships',
-      description: 'Rebuild trust and feel closer.',
+      description: 'Building secure attachments and healthy relationships.',
       slug: 'attachment-relationships'
     },
     {
       icon: Baby,
+      title: 'Infant–Mother Interaction',
+      description: 'Supporting the crucial early bond between mother and baby.',
+      slug: 'infant-mother-interaction'
+    },
+    {
+      icon: Users,
       title: 'Parenting Support',
-      description: 'Guidance for calmer, more connected families.',
+      description: 'Guidance for confident and connected parenting.',
       slug: 'parenting-support'
     },
     {
       icon: Globe,
       title: 'Immigration & Adjustment',
-      description: 'Navigate change with clarity and resilience.',
+      description: 'Support for newcomers navigating life transitions.',
       slug: 'immigration-adjustment'
-    },
-    {
-      icon: Brain,
-      title: 'Anxiety & Stress',
-      description: 'Find calm and restore balance.',
-      slug: 'anxiety-stress'
     },
     {
       icon: Flower2,
       title: 'Grief & Loss',
-      description: 'Support through life\'s painful transitions.',
+      description: 'Compassionate support through life\'s difficult transitions.',
       slug: 'grief-loss'
-    },
-    {
-      icon: Users,
-      title: 'Addiction & Recovery',
-      description: 'Compassionate support for lasting change.',
-      slug: 'addiction-recovery'
-    },
-    {
-      icon: Star,
-      title: 'Adolescent & Young Adult',
-      description: 'Helping youth and young adults thrive.',
-      slug: 'adolescent-young-adult'
     }
   ];
 
@@ -62,33 +74,29 @@ const AreasOfSupport = () => {
             Areas of Support
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We help individuals, couples, and families with a range of challenges.
+            We provide specialized care across a wide range of mental health challenges.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {areas.map((area, index) => {
             const IconComponent = area.icon;
             return (
-              <div
+              <Link
                 key={index}
-                className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300"
+                to={`/areas/${area.slug}`}
+                className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 group"
               >
-                <div className="flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6 mx-auto">
-                  <IconComponent className="w-8 h-8 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-xl mb-4 mx-auto group-hover:bg-emerald-200 transition-colors">
+                  <IconComponent className="w-6 h-6 text-emerald-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">
                   {area.title}
                 </h3>
-                <p className="text-gray-600 mb-6 text-center">
+                <p className="text-gray-600 text-sm text-center leading-relaxed">
                   {area.description}
                 </p>
-                <div className="text-center">
-                  <Link to={`/services/${area.slug}`} className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
-                    Read More →
-                  </Link>
-                </div>
-              </div>
+              </Link>
             );
           })}
         </div>
