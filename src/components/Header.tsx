@@ -15,30 +15,30 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center text-vintage-green">
                 <Phone className="w-4 h-4 mr-1" />
-                <span>236 886 7223</span>
+                <span className="text-base font-medium">236 886 7223</span>
               </div>
               <div className="flex items-center text-vintage-green">
                 <Mail className="w-4 h-4 mr-1" />
-                <span>info@cojourney.ca</span>
+                <span className="text-base font-medium">info@cojourney.ca</span>
               </div>
             </div>
-            <div className="text-vintage-orange font-medium">
+            <div className="text-vintage-orange font-medium text-base">
               Now accepting new clients
             </div>
           </div>
           
           {/* Mobile layout */}
-          <div className="md:hidden space-y-2 text-sm">
-            <div className="flex items-center text-vintage-green">
+          <div className="md:hidden space-y-2">
+            <div className="flex items-center text-black">
               <Phone className="w-4 h-4 mr-1" />
-              <span>236 886 7223</span>
+              <span className="text-base font-medium">236 886 7223</span>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center text-vintage-green">
+              <div className="flex items-center text-black">
                 <Mail className="w-4 h-4 mr-1" />
-                <span>info@cojourney.ca</span>
+                <span className="text-base font-medium">info@cojourney.ca</span>
               </div>
-              <div className="text-vintage-orange font-medium text-xs">
+              <div className="text-vintage-orange font-medium text-sm">
                 Now accepting new clients
               </div>
             </div>
