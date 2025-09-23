@@ -176,14 +176,14 @@ Grief is not something you have to face alone. With support, you can learn to na
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-24 min-h-[500px] flex items-center">
+      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 min-h-[400px] flex items-center">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: `url("${area.heroImage}")`
           }}
         ></div>
-        <div className="absolute inset-0 bg-emerald-900/60"></div>
+        <div className="absolute inset-0 bg-emerald-900/70"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             {area.title}
