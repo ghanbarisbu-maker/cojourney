@@ -14,7 +14,6 @@ export default {
         'vintage-orange': '#F2A65A',
         'vintage-plum': '#8E7CC3',
         'soft-blue': '#A3D5FF',
-        'support-bg-green': '#4A8C7B',
       },
       fontFamily: {
         'serif': ['Georgia', 'serif'],
