@@ -40,7 +40,6 @@ const FamilyTherapyDetails = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Strengthen Family Bonds
               </h2>
-              <p className="text-vintage-green mb-6 leading-relaxed">
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Family therapy helps families work through challenges together, improve communication 
                 patterns, and develop healthier ways of relating to one another. We work with families 
