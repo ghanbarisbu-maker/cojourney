@@ -118,7 +118,7 @@ const AreaOfSupportDetail = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-vintage-green hover:text-deep-forest transition-colors">
+          <Link to="/" className="flex items-center text-soft-emerald hover:text-deep-forest transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -126,7 +126,7 @@ const AreaOfSupportDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-deep-forest via-vintage-green to-soft-blue py-16 min-h-[400px] flex items-center">
+      <section className="relative bg-gradient-to-br from-deep-forest via-soft-emerald to-soft-blue py-16 min-h-[400px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
@@ -156,7 +156,7 @@ const AreaOfSupportDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-vintage-green to-soft-blue">
+      <section className="py-16 bg-gradient-to-r from-soft-emerald to-soft-blue">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Begin Your Healing Journey?
@@ -167,13 +167,13 @@ const AreaOfSupportDetail = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact" 
-              className="bg-white text-deep-forest px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
+              className="bg-white text-soft-emerald px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
             >
               Book Free Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-deep-forest transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-soft-emerald transition-colors"
             >
               Learn More About Our Services
             </Link>
