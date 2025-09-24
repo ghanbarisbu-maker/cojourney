@@ -8,7 +8,7 @@ const AreaOfSupportDetail = () => {
   const areaDetails = {
     'trauma-ptsd': {
       title: 'Trauma & PTSD',
-      heroImage: 'https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `**What it can feel like:** lingering fear, nightmares, feeling "on edge," or emotionally numb. You may avoid places or people, or blame yourself for what happened.
 
 **How we work together:** we start by creating safety with grounding skills and calming routines. As stability grows, we gently approach memories at your pace. Through attachment work, we rebuild trust and closeness. With mentalization, we practice noticing and making sense of emotions and reactions so they don't overwhelm you.
@@ -118,7 +118,7 @@ const AreaOfSupportDetail = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-soft-emerald hover:text-deep-forest transition-colors">
+          <Link to="/" className="flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -126,19 +126,19 @@ const AreaOfSupportDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-deep-forest via-soft-emerald to-soft-blue py-16 min-h-[400px] flex items-center">
+      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 min-h-[400px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: `url("${area.heroImage}")`
           }}
         ></div>
-        <div className="absolute inset-0 bg-deep-forest/70"></div>
+        <div className="absolute inset-0 bg-emerald-900/70"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             {area.title}
           </h1>
-          <p className="text-xl text-warm-sand max-w-3xl mx-auto">
+          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
             Specialized support and evidence-based treatment for your healing journey.
           </p>
         </div>
@@ -150,30 +150,31 @@ const AreaOfSupportDetail = () => {
           <div className="prose prose-lg max-w-none prose-strong:text-gray-900 prose-strong:font-semibold">
             {area.description.split('\n\n').map((paragraph, index) => (
               <p key={index} className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{__html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}} />
+                {paragraph}
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-soft-emerald to-soft-blue">
+      <section className="py-16 bg-gradient-to-r from-emerald-600 to-sky-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Begin Your Healing Journey?
           </h2>
-          <p className="text-xl text-warm-sand mb-8">
+          <p className="text-xl text-emerald-100 mb-8">
             Take the first step toward recovery with compassionate, specialized care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact" 
-              className="bg-white text-soft-emerald px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
+              className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"
             >
               Book Free Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-soft-emerald transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-700 transition-colors"
             >
               Learn More About Our Services
             </Link>
