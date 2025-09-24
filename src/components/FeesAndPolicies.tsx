@@ -55,7 +55,6 @@ const FeesAndPolicies = () => {
                       <h4 className="font-semibold text-gray-900">{fee.service}</h4>
                       <p className="text-gray-600 text-sm">({fee.duration})</p>
                     </div>
-                    <div className="text-xl font-bold text-emerald-600">
                     <div className="text-xl font-bold text-soft-emerald">
                       {fee.price}
                     </div>
@@ -63,8 +62,6 @@ const FeesAndPolicies = () => {
                 );
               })}
             </div>
-                )
-            
             <div className="bg-warm-sand rounded-2xl p-6 mb-8">
               <div className="flex items-center mb-3">
                 <FileText className="w-5 h-5 text-soft-emerald mr-2" />
@@ -113,9 +110,6 @@ const FeesAndPolicies = () => {
           </div>
         </div>
       </div>
-    }
-    )
-    }
     </section>
   );
 };
