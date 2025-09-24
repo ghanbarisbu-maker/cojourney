@@ -150,7 +150,6 @@ const AreaOfSupportDetail = () => {
           <div className="prose prose-lg max-w-none prose-strong:text-gray-900 prose-strong:font-semibold">
             {area.description.split('\n\n').map((paragraph, index) => (
               <p key={index} className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{__html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}} />
-                {paragraph}
             ))}
           </div>
         </div>
