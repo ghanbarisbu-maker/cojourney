@@ -185,3 +185,5 @@ const AreaOfSupportDetail = () => {
 };
 
 export default AreaOfSupportDetail;
+
+export default AreaOfSupportDetail
