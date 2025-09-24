@@ -63,6 +63,7 @@ const FeesAndPolicies = () => {
                 );
               })}
             </div>
+                )
             
             <div className="bg-warm-sand rounded-2xl p-6 mb-8">
               <div className="flex items-center mb-3">
@@ -112,6 +113,9 @@ const FeesAndPolicies = () => {
           </div>
         </div>
       </div>
+    }
+    )
+    }
     </section>
   );
 };
