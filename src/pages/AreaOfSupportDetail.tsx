@@ -118,7 +118,7 @@ const AreaOfSupportDetail = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
+          <Link to="/" className="flex items-center text-vintage-green hover:text-deep-forest transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -126,19 +126,19 @@ const AreaOfSupportDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 min-h-[400px] flex items-center">
+      <section className="relative bg-gradient-to-br from-deep-forest via-vintage-green to-soft-blue py-16 min-h-[400px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: `url("${area.heroImage}")`
           }}
         ></div>
-        <div className="absolute inset-0 bg-emerald-900/70"></div>
+        <div className="absolute inset-0 bg-deep-forest/70"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             {area.title}
           </h1>
-          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
+          <p className="text-xl text-warm-sand max-w-3xl mx-auto">
             Specialized support and evidence-based treatment for your healing journey.
           </p>
         </div>
@@ -156,24 +156,24 @@ const AreaOfSupportDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-emerald-600 to-sky-600">
+      <section className="py-16 bg-gradient-to-r from-vintage-green to-soft-blue">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Begin Your Healing Journey?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8">
+          <p className="text-xl text-warm-sand mb-8">
             Take the first step toward recovery with compassionate, specialized care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact" 
-              className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"
+              className="bg-white text-deep-forest px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
             >
               Book Free Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-700 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-deep-forest transition-colors"
             >
               Learn More About Our Services
             </Link>
