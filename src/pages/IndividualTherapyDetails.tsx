@@ -40,7 +40,6 @@ const IndividualTherapyDetails = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 What is Individual Therapy?
               </h2>
-              <p className="text-vintage-green mb-6 leading-relaxed">
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Individual therapy, also known as psychotherapy or counseling, is a collaborative 
                 process between you and a licensed therapist. In a safe, confidential environment, 
