@@ -40,7 +40,6 @@ const CouplesTherapyDetails = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Rebuild Your Connection
               </h2>
-              <p className="text-vintage-green mb-6 leading-relaxed">
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Couples therapy provides a safe, neutral space where both partners can express 
                 their feelings, work through conflicts, and learn new ways to communicate and 
