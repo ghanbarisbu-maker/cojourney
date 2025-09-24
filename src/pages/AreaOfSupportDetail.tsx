@@ -8,7 +8,7 @@ const AreaOfSupportDetail = () => {
   const areaDetails = {
     'trauma-ptsd': {
       title: 'Trauma & PTSD',
-      heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      heroImage: 'https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: `**What it can feel like:** lingering fear, nightmares, feeling "on edge," or emotionally numb. You may avoid places or people, or blame yourself for what happened.
 
 **How we work together:** we start by creating safety with grounding skills and calming routines. As stability grows, we gently approach memories at your pace. Through attachment work, we rebuild trust and closeness. With mentalization, we practice noticing and making sense of emotions and reactions so they don't overwhelm you.
