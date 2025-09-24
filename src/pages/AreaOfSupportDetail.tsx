@@ -116,9 +116,9 @@ const AreaOfSupportDetail = () => {
   return (
     <div className="min-h-screen bg-support-bg-green">
       {/* Back Navigation */}
-      <div className="bg-white shadow-sm">
+      <div className="bg-support-bg-green shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
+          <Link to="/" className="flex items-center text-white hover:text-white/80 transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -126,19 +126,19 @@ const AreaOfSupportDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 min-h-[400px] flex items-center">
+      <section className="relative bg-support-bg-green py-16 min-h-[400px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: `url("${area.heroImage}")`
           }}
         ></div>
-        <div className="absolute inset-0 bg-emerald-900/70"></div>
+        <div className="absolute inset-0 bg-support-bg-green/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             {area.title}
           </h1>
-          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Specialized support and evidence-based treatment for your healing journey.
           </p>
         </div>
@@ -149,7 +149,7 @@ const AreaOfSupportDetail = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none prose-strong:text-gray-900 prose-strong:font-semibold">
             {area.description.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{__html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}} />
+              <p key={index} className="text-white leading-relaxed mb-6" dangerouslySetInnerHTML={{__html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}} />
             ))}
           </div>
         </div>
