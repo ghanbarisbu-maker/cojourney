@@ -8,7 +8,7 @@ const IndividualTherapyDetails = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-vintage-green hover:text-vintage-orange transition-colors">
+          <Link to="/" className="flex items-center text-soft-emerald hover:text-deep-forest transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Services
           </Link>
@@ -16,13 +16,14 @@ const IndividualTherapyDetails = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-vintage-cream via-white to-vintage-cream py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-vintage-darkest mb-6">
+      <section className="relative bg-gradient-to-br from-deep-forest via-soft-emerald to-soft-blue py-16">
+        <div className="absolute inset-0 bg-soft-emerald/50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
               Individual Therapy
             </h1>
-            <p className="text-xl text-vintage-green max-w-3xl mx-auto">
+            <p className="text-xl text-warm-sand max-w-3xl mx-auto">
               Personalized one-on-one therapy sessions designed to help you overcome challenges, 
               develop coping strategies, and achieve your mental health goals.
             </p>
@@ -40,6 +41,7 @@ const IndividualTherapyDetails = () => {
                 What is Individual Therapy?
               </h2>
               <p className="text-vintage-green mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 Individual therapy, also known as psychotherapy or counseling, is a collaborative 
                 process between you and a licensed therapist. In a safe, confidential environment, 
                 you'll explore your thoughts, feelings, and behaviors to better understand yourself 
@@ -49,7 +51,7 @@ const IndividualTherapyDetails = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                 Our Approach
               </h3>
-              <p className="text-vintage-green mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 We use evidence-based therapeutic approaches tailored to your unique needs, including:
               </p>
               
@@ -61,8 +63,8 @@ const IndividualTherapyDetails = () => {
                   'Trauma-Informed Care',
                   'Solution-Focused Brief Therapy'
                 ].map((approach, index) => (
-                  <li key={index} className="flex items-center text-vintage-green">
-                    <CheckCircle2 className="w-5 h-5 text-vintage-orange mr-3" />
+                  <li key={index} className="flex items-center text-gray-600">
+                    <CheckCircle2 className="w-5 h-5 text-soft-emerald mr-3" />
                     {approach}
                   </li>
                 ))}
@@ -83,15 +85,15 @@ const IndividualTherapyDetails = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 text-vintage-orange mr-3" />
+                    <Clock className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">50-minute sessions</span>
                   </div>
                   <div className="flex items-center">
-                    <Users className="w-5 h-5 text-vintage-green mr-3" />
+                    <Users className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">One-on-one with licensed therapist</span>
                   </div>
                   <div className="flex items-center">
-                    <Award className="w-5 h-5 text-vintage-darkest mr-3" />
+                    <Award className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">Evidence-based treatment</span>
                   </div>
                 </div>
@@ -139,7 +141,7 @@ const IndividualTherapyDetails = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {condition.title}
                 </h3>
-                <p className="text-vintage-green">
+                <p className="text-gray-600">
                   {condition.description}
                 </p>
               </div>
@@ -149,7 +151,7 @@ const IndividualTherapyDetails = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-vintage-green to-vintage-orange">
+      <section className="py-16 bg-gradient-to-r from-soft-emerald to-soft-blue">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Start Your Healing Journey?
@@ -160,13 +162,13 @@ const IndividualTherapyDetails = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/#contact" 
-              className="bg-white text-vintage-darkest px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-soft-emerald px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
             >
               Schedule Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vintage-darkest transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-soft-emerald transition-colors"
             >
               View All Services
             </Link>
