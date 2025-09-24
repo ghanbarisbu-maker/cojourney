@@ -9,6 +9,7 @@ export default {
       colors: {
         'deep-forest': '#2D5016',
         'vintage-green': '#8FBC8F',
+        'soft-emerald': '#497d6f',
         'warm-sand': '#F5E6D3',
         'clay-coral': '#E07A5F',
         'vintage-orange': '#F2A65A',

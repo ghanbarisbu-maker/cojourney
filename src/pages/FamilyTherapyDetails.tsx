@@ -8,7 +8,7 @@ const FamilyTherapyDetails = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-vintage-green hover:text-vintage-orange transition-colors">
+          <Link to="/" className="flex items-center text-soft-emerald hover:text-deep-forest transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Services
           </Link>
@@ -16,13 +16,14 @@ const FamilyTherapyDetails = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-vintage-cream via-white to-vintage-cream py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-vintage-darkest mb-6">
+      <section className="relative bg-gradient-to-br from-deep-forest via-soft-emerald to-soft-blue py-16">
+        <div className="absolute inset-0 bg-soft-emerald/50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
               Family Therapy
             </h1>
-            <p className="text-xl text-vintage-green max-w-3xl mx-auto">
+            <p className="text-xl text-warm-sand max-w-3xl mx-auto">
               Heal family relationships, improve communication, and create a more harmonious 
               home environment with professional family counseling services.
             </p>
@@ -39,7 +40,7 @@ const FamilyTherapyDetails = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Strengthen Family Bonds
               </h2>
-              <p className="text-vintage-green mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 Family therapy helps families work through challenges together, improve communication 
                 patterns, and develop healthier ways of relating to one another. We work with families 
                 of all sizes and configurations to create positive change.
@@ -58,8 +59,8 @@ const FamilyTherapyDetails = () => {
                   'Play therapy for younger children',
                   'Teen-focused communication strategies'
                 ].map((approach, index) => (
-                  <li key={index} className="flex items-center text-vintage-green">
-                    <Home className="w-5 h-5 text-vintage-darkest mr-3" />
+                  <li key={index} className="flex items-center text-gray-600">
+                    <Home className="w-5 h-5 text-soft-emerald mr-3" />
                     {approach}
                   </li>
                 ))}
@@ -80,15 +81,15 @@ const FamilyTherapyDetails = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 text-vintage-orange mr-3" />
+                    <Clock className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">60-90 minute sessions</span>
                   </div>
                   <div className="flex items-center">
-                    <Users className="w-5 h-5 text-vintage-green mr-3" />
+                    <Users className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">All family members participate</span>
                   </div>
                   <div className="flex items-center">
-                    <Award className="w-5 h-5 text-vintage-darkest mr-3" />
+                    <Award className="w-5 h-5 text-soft-emerald mr-3" />
                     <span className="text-gray-700">Evidence-based family interventions</span>
                   </div>
                 </div>
@@ -136,7 +137,7 @@ const FamilyTherapyDetails = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {issue.title}
                 </h3>
-                <p className="text-vintage-green">
+                <p className="text-gray-600">
                   {issue.description}
                 </p>
               </div>
@@ -173,12 +174,12 @@ const FamilyTherapyDetails = () => {
             ].map((benefit, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
                 <div className="flex items-center mb-4">
-                  <CheckCircle2 className="w-6 h-6 text-vintage-orange mr-3" />
+                  <CheckCircle2 className="w-6 h-6 text-soft-emerald mr-3" />
                   <h3 className="text-xl font-semibold text-gray-900">
                     {benefit.title}
                   </h3>
                 </div>
-                <p className="text-vintage-green">
+                <p className="text-gray-600">
                   {benefit.description}
                 </p>
               </div>
@@ -188,7 +189,7 @@ const FamilyTherapyDetails = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-vintage-green to-vintage-orange">
+      <section className="py-16 bg-gradient-to-r from-soft-emerald to-soft-blue">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Heal Your Family?
@@ -199,13 +200,13 @@ const FamilyTherapyDetails = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/#contact" 
-              className="bg-white text-vintage-darkest px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-soft-emerald px-8 py-4 rounded-lg font-semibold hover:bg-warm-sand transition-colors"
             >
               Schedule Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vintage-darkest transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-soft-emerald transition-colors"
             >
               View All Services
             </Link>
