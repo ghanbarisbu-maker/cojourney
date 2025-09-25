@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-vintage-darkest mb-1">Office Address</h4>
-                  <p className="text-vintage-green">British Columbia, Canada<br />In-person and online sessions available</p>
+                  <p className="text-black">British Columbia, Canada<br />In-person and online sessions available</p>
                 </div>
               </div>
               
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-vintage-darkest mb-1">Phone Number</h4>
-                  <p className="text-vintage-green">236 886 7223</p>
+                  <p className="text-black">236 886 7223</p>
                   <p className="text-sm text-gray-500">Professional support available</p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-vintage-darkest mb-1">Email</h4>
-                  <p className="text-vintage-green">info@cojourney.ca</p>
+                  <p className="text-black">info@cojourney.ca</p>
                 </div>
               </div>
               
@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-vintage-darkest mb-1">Office Hours</h4>
-                  <div className="text-vintage-green space-y-1">
+                  <div className="text-black space-y-1">
                     <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                     <p>Saturday: 10:00 AM - 4:00 PM</p>
                     <p>Evening appointments available</p>
