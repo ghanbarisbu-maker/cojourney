@@ -73,7 +73,7 @@ const About = () => {
             About CoJourney
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-serif leading-tight">
-            Healing is not a destination <span className="text-emerald-700">it's a shared journey.</span>
+            Healing is not a destination <br /><span className="text-emerald-700">it's a shared journey.</span>
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             CoJourney is a counselling and psychotherapy practice dedicated to helping individuals, 
