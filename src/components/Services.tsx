@@ -11,7 +11,7 @@ const Services = () => {
       features: ['Anxiety & Depression', 'Trauma Recovery', 'Life Transitions', 'Building Resilience'],
       color: 'blue',
       route: '/services/individual-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: 'https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: UsersRound,
@@ -20,7 +20,7 @@ const Services = () => {
       features: ['Communication Skills', 'Rebuilding Trust', 'Conflict Navigation', 'Attachment-Based Care'],
       color: 'green',
       route: '/services/couples-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Home,
@@ -29,7 +29,7 @@ const Services = () => {
       features: ['Parent-Child Relationships', 'Adolescent Support', 'Family Dynamics', 'Stress Management'],
       color: 'purple',
       route: '/services/family-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/5699479/pexels-photo-5699479.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: 'https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
