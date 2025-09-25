@@ -11,7 +11,7 @@ const Services = () => {
       features: ['Anxiety & Depression', 'Trauma Recovery', 'Life Transitions', 'Building Resilience'],
       color: 'blue',
       route: '/services/individual-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: '/1.jpg.jpg'
     },
     {
       icon: UsersRound,
