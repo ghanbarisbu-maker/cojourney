@@ -60,7 +60,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="relative bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group overflow-hidden"
+                className="relative bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group overflow-hidden min-h-[280px]"
               >
                 {/* Background Image */}
                 <div 
@@ -78,16 +78,20 @@ const Services = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/60"></div>
                 
                 {/* Content */}
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col justify-between h-full">
+                  <div>
                 <div className={`w-14 h-14 rounded-full ${colorClasses[service.color]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <IconComponent className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.title}
                 </h3>
+                  </div>
+                  <div>
                 <Link to={service.route} className="mt-4 text-vintage-orange font-semibold hover:text-white transition-colors inline-block">
                   Learn More →
                 </Link>
+                  </div>
                 </div>
               </div>
             );
