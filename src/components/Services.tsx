@@ -67,7 +67,10 @@ const Services = () => {
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
                     backgroundImage: `url("${service.backgroundImage}")`,
-                    ...(service.title === 'Individual Therapy' ? { backgroundSize: 'cover', backgroundPosition: 'center center' } : {})
+                    ...(service.title === 'Individual Therapy' ? { 
+                      backgroundSize: 'cover', 
+                      backgroundPosition: 'center 40%' 
+                    } : {})
                   }}
                 ></div>
                 
