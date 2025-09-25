@@ -56,6 +56,7 @@ export default function Testimonials() {
               </div>
               
               <p className="text-vintage-green mb-4 leading-relaxed text-lg italic">
+              <p className="text-black mb-4 leading-relaxed text-lg italic">
                 "{testimonial.text}"
               </p>
               
