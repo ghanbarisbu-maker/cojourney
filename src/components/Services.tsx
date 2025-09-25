@@ -29,7 +29,7 @@ const Services = () => {
       features: ['Parent-Child Relationships', 'Adolescent Support', 'Family Dynamics', 'Stress Management'],
       color: 'purple',
       route: '/services/family-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: '/2.jpg.jpg'
     }
   ];
 
