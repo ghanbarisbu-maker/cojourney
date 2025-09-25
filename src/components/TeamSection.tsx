@@ -7,7 +7,7 @@ const TeamSection = () => {
     {
       name: 'Parisa Mousavi',
       credentials: 'PhD, RCC',
-      image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/cec752b639ba8ad45a58c68e1fe62d7f.jpg',
       focusTags: ['Trauma', 'Attachment', 'Immigration'],
       slug: 'parisa-mousavi'
     },
