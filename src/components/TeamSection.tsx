@@ -36,7 +36,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-80 object-cover"
+                  className="w-full h-80 object-cover object-center"
                 />
               </div>
               <div className="p-6">
