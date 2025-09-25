@@ -3,16 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const Hero = () => {
-  const [sunRise, setSunRise] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setSunRise(true);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section className="relative bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16 lg:py-24 overflow-hidden">
       <div 
@@ -22,23 +12,8 @@ export const Hero = () => {
         }}
       ></div>
       
-      {/* Sun Element */}
-      <div 
-        className="absolute rounded-full bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 transition-all duration-[4000ms] ease-out shadow-2xl"
-        style={{
-          width: '150px',
-          height: '150px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          bottom: sunRise ? '20%' : '-10%',
-          opacity: sunRise ? 1 : 0,
-          zIndex: 1,
-          boxShadow: sunRise ? '0 0 100px rgba(255, 255, 0, 0.3), 0 0 200px rgba(255, 255, 0, 0.1)' : 'none'
-        }}
-      ></div>
-      
-      <div className="absolute inset-0 bg-emerald-900/70 z-20"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-30">
+      <div className="absolute inset-0 bg-emerald-900/70"></div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
             Healing is a Journey
