@@ -85,9 +85,6 @@ const Services = () => {
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-200 mb-4 leading-relaxed">
-                  {service.description}
-                </p>
                 <Link to={service.route} className="mt-4 text-vintage-orange font-semibold hover:text-white transition-colors inline-block">
                   Learn More →
                 </Link>
