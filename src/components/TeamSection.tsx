@@ -21,8 +21,20 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 xl:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 xl:py-24 bg-gray-50 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" viewBox="0 0 100 100" className="absolute inset-0 text-emerald-300">
+          <defs>
+            <pattern id="team-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="10" cy="10" r="1" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#team-pattern)" />
+        </svg>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">
             Our Team
