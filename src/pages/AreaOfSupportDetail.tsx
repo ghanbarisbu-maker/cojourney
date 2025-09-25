@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 const AreaOfSupportDetail = () => {
   const { slug } = useParams();
 
-  const areaDetails = {
+  export const areaDetails = {
     'trauma-ptsd': {
       title: 'Trauma & PTSD',
       heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
