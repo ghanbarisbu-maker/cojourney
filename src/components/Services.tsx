@@ -88,14 +88,6 @@ const Services = () => {
                 <p className="text-gray-200 mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-vintage-orange rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
                 <Link to={service.route} className="mt-4 text-vintage-orange font-semibold hover:text-white transition-colors inline-block">
                   Learn More →
                 </Link>
