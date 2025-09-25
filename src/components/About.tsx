@@ -126,20 +126,10 @@ const About = () => {
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                {/* Image */}
-                <div className="relative mb-8 mx-auto w-64 h-48 rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={pillar.image}
-                    alt={pillar.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent"></div>
-                  
-                  {/* Icon Overlay */}
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
-                      <IconComponent className="w-8 h-8 text-emerald-600" />
-                    </div>
+                {/* Simple Icon */}
+                <div className="mb-8 mx-auto">
+                  <div className="bg-emerald-100 rounded-full p-6 w-20 h-20 mx-auto flex items-center justify-center shadow-sm">
+                    <IconComponent className="w-10 h-10 text-emerald-600" />
                   </div>
                 </div>
 
