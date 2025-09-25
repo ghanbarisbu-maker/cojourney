@@ -20,7 +20,7 @@ const Services = () => {
       features: ['Communication Skills', 'Rebuilding Trust', 'Conflict Navigation', 'Attachment-Based Care'],
       color: 'green',
       route: '/services/couples-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Home,
@@ -29,7 +29,7 @@ const Services = () => {
       features: ['Parent-Child Relationships', 'Adolescent Support', 'Family Dynamics', 'Stress Management'],
       color: 'purple',
       route: '/services/family-therapy',
-      backgroundImage: 'https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=600'
+      backgroundImage: 'https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
