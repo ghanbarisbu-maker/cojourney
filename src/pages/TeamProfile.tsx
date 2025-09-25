@@ -10,7 +10,7 @@ const TeamProfile = () => {
     'parisa-mousavi': {
       name: 'Parisa Mousavi',
       credentials: 'PhD, RCC',
-      image: '/cec752b639ba8ad45a58c68e1fe62d7f.jpg',
+      image: '/p.jpg copy.jpg',
       tagline: 'Trauma-informed care with compassion and expertise',
       about: 'Dr. Parisa Mousavi brings over 15 years of experience in trauma-informed therapy, specializing in attachment-based care and mentalization-focused therapy. She has extensive experience working with individuals who have experienced trauma, immigration challenges, and relationship difficulties.',
       specialties: ['Trauma & PTSD', 'Attachment & Relationships', 'Immigration & Adjustment', 'Anxiety & Stress'],
