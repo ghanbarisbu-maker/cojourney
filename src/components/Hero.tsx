@@ -8,8 +8,8 @@ export const Hero = () => {
       {/* Central artistic image */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img
-          src="/12.jpg.jpg"
-          alt="Journey within - person walking on path"
+          src="https://i.pinimg.com/1200x/c9/61/33/c961335bceff5977521ca14a4824a8fe.jpg"
+          alt="Double exposure image of a person walking on a path within a head silhouette"
           className="h-full max-h-[70vh] w-auto object-contain opacity-40"
         />
       </div>
