@@ -5,15 +5,6 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 export const Hero = () => {
   return (
     <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 min-h-screen flex items-center">
-      {/* Central artistic image */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <img
-          src="https://i.pinimg.com/1200x/c9/61/33/c961335bceff5977521ca14a4824a8fe.jpg"
-          alt="Double exposure image of a person walking on a path within a head silhouette"
-          className="h-full max-h-[70vh] w-auto object-contain opacity-40"
-        />
-      </div>
-      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-white">
