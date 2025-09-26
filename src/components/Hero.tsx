@@ -4,7 +4,15 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 min-h-screen flex items-center">
+    <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url("https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1200")'
+        }}
+      ></div>
+      
+      <div className="absolute inset-0 bg-emerald-900/70"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-white">
