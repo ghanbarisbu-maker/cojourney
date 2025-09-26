@@ -6,11 +6,11 @@ export const Hero = () => {
   return (
     <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 min-h-screen flex items-center">
       {/* Central artistic image */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img
           src="/12.jpg.jpg"
           alt="Journey within - person walking on path"
-          className="h-full max-h-[80vh] w-auto object-contain opacity-30 mix-blend-overlay"
+          className="h-full max-h-[70vh] w-auto object-contain opacity-40"
         />
       </div>
       
