@@ -50,11 +50,11 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col">
-              <h1 className="text-xl font-bold text-gray-900 leading-tight">
-                Co<span className="text-vintage-orange">Journey</span>
+            <Link to="/" className="flex flex-col group">
+              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-none mb-1 transition-colors">
+                Co<span className="text-vintage-orange group-hover:text-vintage-green transition-colors">Journey</span>
               </h1>
-              <p className="text-sm font-normal text-gray-600 leading-tight">
+              <p className="text-xs lg:text-sm font-light text-gray-700 leading-tight tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
                 Counselling and Psychotherapy Clinic
               </p>
             </Link>
