@@ -9,17 +9,7 @@ const Header = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top contact bar - Desktop only */}
       <div className="hidden md:block bg-vintage-cream py-2 px-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center text-vintage-green">
-              <Phone className="w-4 h-4 mr-1" />
-              <span className="text-base font-medium">236 886 7223</span>
-            </div>
-            <div className="flex items-center text-vintage-green">
-              <Mail className="w-4 h-4 mr-1" />
-              <span className="text-base font-medium">info@cojourney.ca</span>
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto flex justify-end items-center text-sm">
           <div className="text-vintage-orange font-medium text-base">
             Now accepting new clients
           </div>
