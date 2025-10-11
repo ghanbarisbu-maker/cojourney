@@ -7,15 +7,6 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Top contact bar - Desktop only */}
-      <div className="hidden md:block bg-vintage-cream py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex justify-end items-center text-sm">
-          <div className="text-vintage-orange font-medium text-base">
-            Now accepting new clients
-          </div>
-        </div>
-      </div>
-
       {/* Main navigation */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
