@@ -53,16 +53,16 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/50 to-transparent"></div>
 
       <div className="relative h-full min-h-[75vh] lg:min-h-[85vh] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl lg:max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-[1.1]">
               Healing is not a destination
             </h1>
 
-            <div className="h-20 sm:h-24 lg:h-28 flex items-center mb-6">
+            <div className="h-24 sm:h-28 lg:h-32 flex items-center mb-8">
               <h2
                 key={currentMessageIndex}
-                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-teal-100 animate-fade-in"
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-teal-100 animate-fade-in leading-tight"
                 style={{
                   fontFamily: '"Playfair Display", Georgia, serif'
                 }}
@@ -71,21 +71,21 @@ export const Hero = () => {
               </h2>
             </div>
 
-            <p className="text-lg sm:text-xl lg:text-2xl text-slate-200 mb-10 leading-relaxed font-light">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed font-light max-w-3xl">
               Trauma-informed, attachment-based, and mentalization-focused care.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-base sm:text-lg"
+                className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-10 py-5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg sm:text-xl"
               >
                 Book a Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-3 w-6 h-6" />
               </Link>
               <Link
                 to="/approach"
-                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-8 py-4 rounded-full font-semibold transition-all duration-300 text-base sm:text-lg"
+                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-10 py-5 rounded-full font-semibold transition-all duration-300 text-lg sm:text-xl"
               >
                 Explore Our Approach
               </Link>
