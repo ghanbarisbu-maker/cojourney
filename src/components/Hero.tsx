@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export const Hero = () => {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const rotatingMessages = [
     "It's a shared journey.",
@@ -11,24 +12,43 @@ export const Hero = () => {
     "Discovering safety, meaning, and connection."
   ];
 
+  const backgroundImages = [
+    "/2.jpg copy.jpg",
+    "/1.jpg copy.jpg"
+  ];
+
   useEffect(() => {
-    const interval = setInterval(() => {
+    const messageInterval = setInterval(() => {
       setCurrentMessageIndex((prevIndex) =>
         (prevIndex + 1) % rotatingMessages.length
       );
     }, 4000);
 
-    return () => clearInterval(interval);
+    const imageInterval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 8000);
+
+    return () => {
+      clearInterval(messageInterval);
+      clearInterval(imageInterval);
+    };
   }, []);
 
   return (
     <section className="relative min-h-[75vh] lg:min-h-[85vh] overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("/2.jpg copy.jpg")'
-        }}
-      ></div>
+      {backgroundImages.map((image, index) => (
+        <div
+          key={image}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1500 ${
+            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            backgroundImage: `url("${image}")`
+          }}
+        ></div>
+      ))}
 
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/50 to-transparent"></div>
 
