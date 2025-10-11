@@ -74,7 +74,7 @@ const IndividualTherapyDetails = () => {
               <img
                 src="https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Individual therapy session"
-                className="rounded-2xl shadow-lg w-full h-80 object-cover mb-8"
+                className="rounded-2xl shadow-lg w-full h-80 object-contain bg-gray-100 mb-8"
               />
               
               <div className="bg-white rounded-2xl p-6 shadow-lg">
