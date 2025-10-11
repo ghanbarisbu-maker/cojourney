@@ -17,7 +17,7 @@ export default {
         'soft-blue': '#A3D5FF',
       },
       fontFamily: {
-        'serif': ['Georgia', 'serif'],
+        'serif': ['"Playfair Display"', 'Georgia', 'serif'],
         'sans': ['Inter', 'system-ui', 'sans-serif'],
       },
     },
