@@ -50,21 +50,26 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-gray-900">
-              Co<span className="text-vintage-orange">Journey</span> <span className="text-base font-normal text-gray-700">Counselling and Psychotherapy Clinic</span>
-            </h1>
+            <Link to="/" className="flex flex-col">
+              <h1 className="text-xl font-bold text-gray-900 leading-tight">
+                Co<span className="text-vintage-orange">Journey</span>
+              </h1>
+              <p className="text-sm font-normal text-gray-600 leading-tight">
+                Counselling and Psychotherapy Clinic
+              </p>
+            </Link>
           </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Home</a>
             <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Services</a>
-            <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Areas of Support</a>
+            <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Areas</a>
             <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Approach</Link>
             <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Team</a>
             <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Fees</Link>
             <Link to="/contact" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Contact</Link>
-            <Link to="/contact" className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors">
+            <Link to="/contact" className="bg-vintage-orange text-white px-5 py-2 rounded-full hover:bg-vintage-green transition-colors whitespace-nowrap text-sm lg:text-base">
               Book Appointment
             </Link>
           </div>
@@ -86,7 +91,7 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors">Home</a>
               <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors">Services</a>
-              <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors">Areas of Support</a>
+              <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors">Areas</a>
               <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors">Approach</Link>
               <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors">Team</a>
               <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors">Fees</Link>

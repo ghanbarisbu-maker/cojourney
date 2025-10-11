@@ -17,6 +17,11 @@ export const Hero = () => {
     "/1.jpg copy.jpg"
   ];
 
+  const buttonColors = [
+    { bg: 'bg-[#20796c]', hover: 'hover:bg-[#1a6158]' },
+    { bg: 'bg-[#e98c4a]', hover: 'hover:bg-[#d47a38]' }
+  ];
+
   useEffect(() => {
     const messageInterval = setInterval(() => {
       setCurrentMessageIndex((prevIndex) =>
@@ -55,14 +60,14 @@ export const Hero = () => {
       <div className="relative h-full min-h-[75vh] lg:min-h-[85vh] flex items-center">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
           <div className="max-w-4xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-[1.1]">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-[1.1] drop-shadow-lg">
               Healing is not a destination
             </h1>
 
             <div className="h-24 sm:h-28 lg:h-32 flex items-center mb-8">
               <h2
                 key={currentMessageIndex}
-                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-teal-100 animate-fade-in leading-tight"
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-teal-100 animate-fade-in leading-tight drop-shadow-lg"
                 style={{
                   fontFamily: '"Playfair Display", Georgia, serif'
                 }}
@@ -71,14 +76,14 @@ export const Hero = () => {
               </h2>
             </div>
 
-            <p className="text-xl sm:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed font-light max-w-3xl">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed font-light max-w-3xl drop-shadow-md">
               Trauma-informed, attachment-based, and mentalization-focused care.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-10 py-5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg sm:text-xl"
+                className={`inline-flex items-center justify-center ${buttonColors[currentImageIndex].bg} ${buttonColors[currentImageIndex].hover} text-white px-10 py-5 rounded-full font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 text-lg sm:text-xl`}
               >
                 Book a Free Consultation
                 <ArrowRight className="ml-3 w-6 h-6" />
