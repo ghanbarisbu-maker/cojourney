@@ -51,10 +51,10 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex flex-col group">
-              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-none mb-1 transition-colors">
+              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-none mb-1.5 transition-colors">
                 Co<span className="text-vintage-orange group-hover:text-vintage-green transition-colors">Journey</span>
               </h1>
-              <p className="text-xs lg:text-sm font-light text-gray-700 leading-tight tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
+              <p className="text-base font-bold text-gray-900 leading-tight">
                 Counselling and Psychotherapy Clinic
               </p>
             </Link>
