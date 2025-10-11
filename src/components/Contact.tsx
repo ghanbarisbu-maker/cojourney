@@ -52,28 +52,7 @@ const Contact = () => {
                   <p className="text-black">British Columbia, Canada<br />In-person and online sessions available</p>
                 </div>
               </div>
-              
-              <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <Phone className="w-6 h-6 text-vintage-orange" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Phone Number</h4>
-                  <p className="text-black">236 886 7223</p>
-                  <p className="text-sm text-gray-500">Professional support available</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <Mail className="w-6 h-6 text-vintage-plum" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Email</h4>
-                  <p className="text-black">info@cojourney.ca</p>
-                </div>
-              </div>
-              
+
               <div className="flex items-start">
                 <div className="bg-vintage-cream rounded-full p-3 mr-4">
                   <Clock className="w-6 h-6 text-vintage-orange" />
