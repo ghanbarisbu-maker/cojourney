@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">
-              Co<span className="text-vintage-orange">Journey</span>
+              Co<span className="text-vintage-orange">Journey</span> <span className="text-base font-normal text-gray-400">Counselling and Psychotherapy Clinic</span>
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Providing compassionate, evidence-based mental health services to 
@@ -91,7 +91,7 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
             <p className="text-gray-400 mb-4 md:mb-0">
-              © 2024 CoJourney. All rights reserved.
+              © 2024 CoJourney Counselling and Psychotherapy Clinic. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-vintage-orange transition-colors">Privacy Policy</a>

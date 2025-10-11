@@ -36,35 +36,107 @@ const ApproachPage = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl shadow-md p-8 text-center">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6">
-                <Shield className="w-8 h-8 text-emerald-600" />
+          <div className="space-y-12">
+            <div className="bg-white rounded-2xl shadow-md p-8">
+              <div className="flex items-start gap-6">
+                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Shield className="w-8 h-8 text-emerald-600" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Trauma-Informed Care</h3>
+
+                  <div className="space-y-4 text-gray-600">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">The Challenge:</h4>
+                      <p className="leading-relaxed">
+                        Trauma can leave you feeling unsafe in your own body and mind. You might experience hypervigilance, flashbacks, emotional numbing, or a persistent sense of threat—even when you're objectively safe. These aren't signs of weakness; they're your nervous system's protective responses that have outlived their usefulness.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">How This Approach Helps:</h4>
+                      <p className="leading-relaxed">
+                        Trauma-informed care recognizes that healing begins with safety. We work together to establish physical and emotional safety first, using grounding techniques and nervous system regulation before addressing traumatic memories. This approach understands that you're not broken—you're responding to overwhelming experiences in ways that once protected you. We move at your pace, never pushing you to revisit painful memories until you feel ready and resourced.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">What Changes You Can Expect:</h4>
+                      <p className="leading-relaxed">
+                        Over time, you'll notice a greater sense of safety in your daily life. Triggers lose their power, and you'll develop the ability to stay present even during difficult moments. Many clients describe feeling more grounded, sleeping better, and experiencing freedom from the constant vigilance that exhausted them. You'll reclaim parts of your life that trauma had taken away—relationships, activities, joy, and peace.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Trauma-Informed Care</h3>
-              <p className="text-gray-600">
-                We understand how trauma affects the mind and body, creating a safe space where healing can begin naturally and at your own pace.
-              </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-md p-8 text-center">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6">
-                <Heart className="w-8 h-8 text-emerald-600" />
+            <div className="bg-white rounded-2xl shadow-md p-8">
+              <div className="flex items-start gap-6">
+                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Heart className="w-8 h-8 text-emerald-600" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Attachment-Based Therapy</h3>
+
+                  <div className="space-y-4 text-gray-600">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">The Challenge:</h4>
+                      <p className="leading-relaxed">
+                        The relationships we form early in life shape how we connect with others throughout our lives. If you struggle with fear of abandonment, difficulty trusting others, feeling unworthy of love, or repeating painful relationship patterns, these often stem from early attachment experiences. You might push people away when you need them most, or cling too tightly out of fear of loss.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">How This Approach Helps:</h4>
+                      <p className="leading-relaxed">
+                        Attachment-based therapy provides a corrective emotional experience. Through our consistent, reliable therapeutic relationship, you'll experience what secure attachment feels like—perhaps for the first time. We explore how your early experiences created your current relationship patterns, not to blame anyone, but to help you understand and eventually rewrite these patterns. The therapy relationship itself becomes a safe laboratory for trying new ways of connecting, expressing needs, and handling conflict or disappointment.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">What Changes You Can Expect:</h4>
+                      <p className="leading-relaxed">
+                        You'll develop the capacity for more secure, fulfilling relationships. The fear of abandonment softens, and you'll feel more comfortable both with intimacy and with healthy independence. You'll learn to communicate needs directly rather than through protests or withdrawal. Many clients find they stop repeating painful relationship dynamics and can recognize and choose healthier partners. Self-compassion grows, replacing harsh inner criticism with a kinder, more supportive inner voice.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Attachment-Based Therapy</h3>
-              <p className="text-gray-600">
-                We explore how early relationships shape current patterns, helping you build secure, healthy connections with others and yourself.
-              </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-md p-8 text-center">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6">
-                <Brain className="w-8 h-8 text-emerald-600" />
+            <div className="bg-white rounded-2xl shadow-md p-8">
+              <div className="flex items-start gap-6">
+                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Brain className="w-8 h-8 text-emerald-600" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Mentalization-Based Therapy</h3>
+
+                  <div className="space-y-4 text-gray-600">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">The Challenge:</h4>
+                      <p className="leading-relaxed">
+                        When emotions run high, it's easy to lose the ability to think clearly about what you're feeling or why others are acting the way they do. You might react impulsively, misread others' intentions, or feel overwhelmed by emotions you can't name or understand. This makes relationships confusing and conflict feel devastating. You might know intellectually that you're overreacting, but in the moment, you can't access that knowledge.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">How This Approach Helps:</h4>
+                      <p className="leading-relaxed">
+                        Mentalization is the ability to understand behavior—yours and others'—in terms of thoughts, feelings, wishes, and intentions. We practice slowing down in moments of intensity to wonder: "What am I feeling right now? What might be driving this reaction? What could be going on for the other person?" This creates space between stimulus and response. Rather than being swept away by emotion or jumping to conclusions, you develop curiosity about mental states. This isn't about controlling feelings—it's about understanding them so they inform you rather than control you.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">What Changes You Can Expect:</h4>
+                      <p className="leading-relaxed">
+                        You'll experience greater emotional regulation—not by suppressing feelings, but by understanding them. Relationships become less reactive and more intentional. You'll catch yourself before saying things you'll regret, and you'll be able to repair ruptures more effectively. Many clients describe feeling less at the mercy of their emotions and more able to choose their responses. You'll develop genuine empathy for others while maintaining appropriate boundaries, and you'll understand yourself with compassion rather than harsh judgment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Mentalization-Focused</h3>
-              <p className="text-gray-600">
-                We help you understand your own thoughts and feelings, as well as those of others, leading to better relationships and emotional regulation.
-              </p>
             </div>
           </div>
         </div>

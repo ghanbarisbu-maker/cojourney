@@ -50,22 +50,23 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-gray-900">
-              Co<span className="text-vintage-orange">Journey</span>
+            <h1 className="text-xl font-bold text-gray-900">
+              Co<span className="text-vintage-orange">Journey</span> <span className="text-base font-normal text-gray-700">Counselling and Psychotherapy Clinic</span>
             </h1>
           </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Home</Link>
-            <Link to="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Services</Link>
+            <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Home</a>
+            <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Services</a>
+            <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Areas of Support</a>
             <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Approach</Link>
-            <Link to="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Team</Link>
+            <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Team</a>
             <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Fees</Link>
             <Link to="/contact" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Contact</Link>
-            <button className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors">
+            <Link to="/contact" className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors">
               Book Appointment
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -83,15 +84,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-900 hover:text-emerald-600 transition-colors">Home</Link>
-              <Link to="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors">Services</Link>
+              <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors">Home</a>
+              <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors">Services</a>
+              <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors">Areas of Support</a>
               <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors">Approach</Link>
-              <Link to="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors">Team</Link>
+              <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors">Team</a>
               <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors">Fees</Link>
               <Link to="/contact" className="text-gray-900 hover:text-emerald-600 transition-colors">Contact</Link>
-              <button className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors w-fit">
+              <Link to="/contact" className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors w-fit">
                 Book Appointment
-              </button>
+              </Link>
             </div>
           </div>
         )}

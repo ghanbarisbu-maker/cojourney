@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 export const areaDetails = {
   'trauma-ptsd': {
     title: 'Trauma & PTSD',
-    heroImage: 'https://images.pexels.com/photos/6749844/pexels-photo-6749844.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroImage: 'https://images.pexels.com/photos/3759656/pexels-photo-3759656.jpeg?auto=compress&cs=tinysrgb&w=1200',
     description: `**What it can feel like:** lingering fear, nightmares, feeling "on edge," or emotionally numb. You may avoid places or people, or blame yourself for what happened.
 
 **How we work together:** we start by creating safety with grounding skills and calming routines. As stability grows, we gently approach memories at your pace. Through attachment work, we rebuild trust and closeness. With mentalization, we practice noticing and making sense of emotions and reactions so they don't overwhelm you.
@@ -32,7 +32,7 @@ export const areaDetails = {
   },
   'eating-disorders-body-image': {
     title: 'Eating Disorders & Body Image',
-    heroImage: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroImage: 'https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=1200',
     description: `**What it can feel like:** preoccupation with food, body shape, or weight; cycles of restriction or overeating; shame and isolation.
 
 **How we work together:** we begin with stabilization and, when needed, coordinate care with other professionals. In therapy, we explore the protective role of the eating disorder without judgment. Attachment work addresses perfectionism and self-criticism, while mentalization helps uncover the emotions driving urges and develop flexible coping.
