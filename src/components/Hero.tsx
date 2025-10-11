@@ -46,7 +46,7 @@ export const Hero = () => {
       {backgroundImages.map((image, index) => (
         <div
           key={image}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1500 ${
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1500 animate-water-flow ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
