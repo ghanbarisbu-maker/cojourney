@@ -78,7 +78,14 @@ const TeamProfile = () => {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center text-white">
-            <div className="lg:col-span-2">
+            <div className="flex justify-center lg:order-2">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-64 h-96 rounded-2xl shadow-lg object-cover object-top"
+              />
+            </div>
+            <div className="lg:col-span-2 lg:order-1">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
                 {member.name}
               </h1>
@@ -94,13 +101,6 @@ const TeamProfile = () => {
               >
                 Book Consultation
               </Link>
-            </div>
-            <div className="flex justify-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-64 h-96 rounded-2xl shadow-lg object-cover object-top"
-              />
             </div>
           </div>
         </div>
