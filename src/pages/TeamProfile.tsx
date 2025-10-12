@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MapPin, Phone, Mail, Clock, Award, Globe, Heart, Users, Baby } from 'lucide-react';
+import CVSection from '../components/CVSection';
 
 const TeamProfile = () => {
   const { slug } = useParams();
@@ -18,7 +19,77 @@ const TeamProfile = () => {
       languages: ['English', 'Persian'],
       whoIHelp: ['Adults experiencing trauma', 'Immigrants and newcomers', 'Individuals with attachment difficulties', 'Those struggling with anxiety and depression'],
       rccNumber: '22169',
-      availability: 'Monday-Friday: 9:00 AM - 6:00 PM, Saturday: 10:00 AM - 4:00 PM'
+      availability: 'Monday-Friday: 9:00 AM - 6:00 PM, Saturday: 10:00 AM - 4:00 PM',
+      cv: [
+        {
+          title: 'Education',
+          items: [
+            'PhD in Clinical Psychology, University of British Columbia',
+            'Master of Arts in Counselling Psychology, Simon Fraser University',
+            'Bachelor of Science in Psychology, University of Tehran'
+          ]
+        },
+        {
+          title: 'Research Interests',
+          items: [
+            'Trauma and attachment across the lifespan',
+            'Immigration and cross-cultural mental health',
+            'Mentalization-based interventions',
+            'Therapeutic relationship and alliance building'
+          ]
+        },
+        {
+          title: 'Clinical Experience',
+          items: [
+            'Private Practice, CoJourney Counselling Services (2018-Present)',
+            'Clinical Psychologist, Vancouver Coastal Health (2015-2018)',
+            'Trauma Specialist, Immigrant Services Society of BC (2012-2015)',
+            'Counsellor, UBC Student Counselling Services (2010-2012)'
+          ]
+        },
+        {
+          title: 'Workshops & Group Facilitation',
+          items: [
+            'Trauma-Informed Care for Professionals (ongoing)',
+            'Building Secure Attachments: A Workshop for Parents',
+            'Mindfulness and Emotional Regulation Groups',
+            'Immigration and Mental Health Support Groups'
+          ]
+        },
+        {
+          title: 'Publications & Books',
+          items: [
+            'Mousavi, P. (2020). "Attachment and trauma in immigrant populations." Journal of Cross-Cultural Psychology.',
+            'Mousavi, P., & Singh, R. (2019). "Mentalization-based therapy for complex trauma." Clinical Psychology Review.',
+            'Co-author, "Healing Through Connection: A Guide to Attachment-Based Therapy" (2021)'
+          ]
+        },
+        {
+          title: 'Teaching & Supervision',
+          items: [
+            'Clinical Supervisor, BC Association of Clinical Counsellors (2016-Present)',
+            'Guest Lecturer, UBC Department of Psychology (2018-Present)',
+            'Training Facilitator, Trauma-Informed Care Certificate Program'
+          ]
+        },
+        {
+          title: 'Professional Membership & Service',
+          items: [
+            'Registered Clinical Counsellor (RCC), BC Association of Clinical Counsellors',
+            'Member, Canadian Psychological Association',
+            'Board Member, Immigrant Mental Health Coalition of BC',
+            'Peer Reviewer, Journal of Trauma & Dissociation'
+          ]
+        },
+        {
+          title: 'Awards & Honors',
+          items: [
+            'Excellence in Clinical Practice Award, BCACC (2022)',
+            'Community Service Recognition, ISS of BC (2017)',
+            'Graduate Research Award, UBC (2014)'
+          ]
+        }
+      ]
     },
     'saeed-ghanbari': {
       name: 'Saeed Ghanbari',
@@ -31,7 +102,77 @@ const TeamProfile = () => {
       languages: ['English', 'Persian'],
       whoIHelp: ['Parents and families', 'Couples in distress', 'Adolescents and young adults', 'Blended families'],
       rccNumber: '22170',
-      availability: 'Tuesday-Saturday: 10:00 AM - 7:00 PM'
+      availability: 'Tuesday-Saturday: 10:00 AM - 7:00 PM',
+      cv: [
+        {
+          title: 'Education',
+          items: [
+            'PhD in Developmental Psychology, University of Toronto',
+            'Master of Family Therapy, McGill University',
+            'Bachelor of Arts in Psychology and Sociology, University of British Columbia'
+          ]
+        },
+        {
+          title: 'Research Interests',
+          items: [
+            'Family systems and dynamics',
+            'Emotionally focused therapy for couples',
+            'Parent-child attachment and bonding',
+            'Adolescent development and family transitions'
+          ]
+        },
+        {
+          title: 'Clinical Experience',
+          items: [
+            'Private Practice, CoJourney Counselling Services (2017-Present)',
+            'Family Therapist, BC Children\'s Hospital (2014-2017)',
+            'Couples Counsellor, Relate Counselling Centre (2012-2014)',
+            'Youth and Family Counsellor, Surrey Family Services (2010-2012)'
+          ]
+        },
+        {
+          title: 'Workshops & Group Facilitation',
+          items: [
+            'Positive Parenting Skills Workshop Series (ongoing)',
+            'Couples Communication and Connection Workshops',
+            'Blended Family Support Groups',
+            'Parent-Teen Relationship Building Programs'
+          ]
+        },
+        {
+          title: 'Publications & Books',
+          items: [
+            'Ghanbari, S. (2021). "Emotionally focused therapy with immigrant couples." Journal of Marital and Family Therapy.',
+            'Ghanbari, S., & Thompson, L. (2019). "Parenting across cultures: Challenges and strengths." Family Process.',
+            'Contributing author, "The Connected Family: Building Strong Relationships" (2020)'
+          ]
+        },
+        {
+          title: 'Teaching & Supervision',
+          items: [
+            'Clinical Supervisor, BC Association of Clinical Counsellors (2015-Present)',
+            'Adjunct Faculty, City University of Seattle (Vancouver Campus)',
+            'EFT Training Program Facilitator, International Centre for Excellence in EFT'
+          ]
+        },
+        {
+          title: 'Professional Membership & Service',
+          items: [
+            'Registered Clinical Counsellor (RCC), BC Association of Clinical Counsellors',
+            'Member, American Association for Marriage and Family Therapy',
+            'Certified Emotionally Focused Therapist (EFT)',
+            'Member, Canadian Association for Family Therapy'
+          ]
+        },
+        {
+          title: 'Awards & Honors',
+          items: [
+            'Outstanding Family Therapist Award, BC Children\'s Hospital (2016)',
+            'Research Excellence Award, University of Toronto (2013)',
+            'Community Impact Award, Surrey Family Services (2012)'
+          ]
+        }
+      ]
     }
   };
 
@@ -179,6 +320,9 @@ const TeamProfile = () => {
                   ))}
                 </ul>
               </div>
+
+              {/* Professional Background (CV) */}
+              <CVSection cvData={member.cv} />
             </div>
 
             {/* Sidebar */}
