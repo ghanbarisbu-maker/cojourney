@@ -68,7 +68,7 @@ const TeamProfile = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url("/image copy copy copy copy.png")`
+            backgroundImage: `url("/57cd8ef3f083e5a039d234abb4c2487b.jpg")`
           }}
         ></div>
 
