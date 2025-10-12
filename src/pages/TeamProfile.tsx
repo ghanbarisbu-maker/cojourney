@@ -63,8 +63,20 @@ const TeamProfile = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal py-16 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url("/image copy copy copy copy.png")`
+          }}
+        ></div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/60"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center text-white">
             <div className="lg:col-span-2">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
@@ -73,7 +85,7 @@ const TeamProfile = () => {
               <p className="text-xl text-soft-mint mb-6">
                 {member.credentials}
               </p>
-              <p className="text-lg text-soft-mint mb-8">
+              <p className="text-lg text-white mb-8">
                 {member.tagline}
               </p>
               <Link
