@@ -63,45 +63,44 @@ const TeamProfile = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal py-16 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url("/8ecc2124baa28be89320197fdddacbce copy.jpg")`,
-            backgroundPosition: '30% center'
+            backgroundImage: `url("/c139e244deff0dc7f7dd28878aed53ea copy.jpg")`
           }}
         ></div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 via-gray-900/40 to-gray-900/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 via-gray-900/50 to-transparent"></div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 items-center text-white">
-            <div className="flex justify-center lg:order-2">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-64 h-96 rounded-2xl shadow-lg object-cover object-top"
-              />
-            </div>
-            <div className="lg:col-span-2 lg:order-1">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-serif">
                 {member.name}
               </h1>
-              <p className="text-xl text-soft-mint mb-6">
+              <p className="text-xl md:text-2xl text-soft-mint mb-6">
                 {member.credentials}
               </p>
-              <p className="text-lg text-white mb-8">
+              <p className="text-lg md:text-xl text-white mb-8 max-w-xl">
                 {member.tagline}
               </p>
               <Link
                 to="/contact"
-                className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block"
+                className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block shadow-lg"
               >
                 Book Consultation
               </Link>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full max-w-md h-64 rounded-2xl shadow-2xl object-cover object-center"
+              />
             </div>
           </div>
         </div>
