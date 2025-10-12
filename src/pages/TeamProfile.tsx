@@ -99,7 +99,7 @@ const TeamProfile = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full max-w-md h-64 rounded-2xl shadow-2xl object-cover object-center"
+                className="w-full max-w-sm h-80 rounded-2xl shadow-2xl object-cover object-top"
               />
             </div>
           </div>
