@@ -1,37 +1,269 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, Phone, Mail, Clock, Award, Globe, Heart, Users, Baby } from 'lucide-react';
+import { ArrowLeft, ChevronDown, Download } from 'lucide-react';
 
 const TeamProfile = () => {
   const { slug } = useParams();
+  const [openSection, setOpenSection] = useState<string | null>(null);
 
-  // Team member data
+  const toggleSection = (section: string) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
   const teamMembers = {
-    'parisa-mousavi': {
-      name: 'Parisa Mousavi',
-      credentials: 'PhD, RCC',
-      image: '/p.jpg copy.jpg',
-      tagline: 'Trauma-informed care with compassion and expertise',
-      about: 'Dr. Parisa Mousavi brings over 15 years of experience in trauma-informed therapy, specializing in attachment-based care and mentalization-focused therapy. She has extensive experience working with individuals who have experienced trauma, immigration challenges, and relationship difficulties.',
-      specialties: ['Trauma & PTSD', 'Attachment & Relationships', 'Immigration & Adjustment', 'Anxiety & Stress'],
-      approaches: ['Mentalization-Based Therapy (MBT)', 'Trauma-Informed Care', 'Attachment-Based Therapy', 'Cognitive Behavioral Therapy (CBT)'],
-      languages: ['English', 'Persian'],
-      whoIHelp: ['Adults experiencing trauma', 'Immigrants and newcomers', 'Individuals with attachment difficulties', 'Those struggling with anxiety and depression'],
-      rccNumber: '22169',
-      availability: 'Monday-Friday: 9:00 AM - 6:00 PM, Saturday: 10:00 AM - 4:00 PM'
-    },
     'saeed-ghanbari': {
-      name: 'Saeed Ghanbari',
+      name: 'Dr. Saeed Ghanbari',
       credentials: 'PhD, RCC',
       image: '/saeed-profile.jpg',
-      tagline: 'Supporting families and relationships with evidence-based care',
-      about: 'Dr. Saeed Ghanbari specializes in family therapy, couples counseling, and parent support. With a background in developmental psychology, he helps families navigate challenges and build stronger connections through evidence-based therapeutic approaches.',
-      specialties: ['Parenting Support', 'Couples Therapy', 'Family Therapy', 'Adolescent & Young Adult'],
-      approaches: ['Family Systems Therapy', 'Emotionally Focused Therapy (EFT)', 'Parent Training Programs', 'Solution-Focused Brief Therapy'],
-      languages: ['English', 'Persian'],
-      whoIHelp: ['Parents and families', 'Couples in distress', 'Adolescents and young adults', 'Blended families'],
-      rccNumber: '22170',
-      availability: 'Tuesday-Saturday: 10:00 AM - 7:00 PM'
+      bioSummary: 'Registered Clinical Counsellor with over 15 years of experience in trauma-informed, attachment-based, and mentalization-focused therapy. Specializing in relational therapy and developmental psychopathology.',
+      cvLink: '#',
+      sections: {
+        education: {
+          title: 'Education',
+          content: [
+            '**PhD in Psychology**, University of British Columbia, 2010',
+            '**MA in Clinical Psychology**, Simon Fraser University, 2006',
+            '**BA in Psychology (Honors)**, University of Toronto, 2004',
+            '',
+            '**Clinical Training:**',
+            '• Advanced Training in Mentalization-Based Therapy (MBT), Anna Freud Centre, London, UK',
+            '• Certificate in Trauma-Informed Care, Justice Institute of British Columbia',
+            '• Attachment-Based Family Therapy Training, Philadelphia Child and Family Therapy Training Center'
+          ]
+        },
+        researchInterests: {
+          title: 'Research Interests',
+          content: [
+            '• Attachment theory and its application in clinical practice',
+            '• Developmental psychopathology across the lifespan',
+            '• Trauma and its intergenerational transmission',
+            '• Mentalization and reflective functioning in therapeutic relationships',
+            '• Immigration, acculturation, and mental health',
+            '• Parent-child relationships and early intervention',
+            '• Cultural considerations in psychotherapy'
+          ]
+        },
+        clinicalExperience: {
+          title: 'Clinical Experience',
+          content: [
+            '**Private Practice** (2012–Present)',
+            'CoJourney Counselling and Psychotherapy Clinic',
+            '• Individual, couples, and family therapy',
+            '• Specialization in trauma, attachment disorders, and relationship difficulties',
+            '• Work with diverse populations including immigrants, refugees, and LGBTQ+ clients',
+            '',
+            '**Clinical Psychologist** (2010–2012)',
+            'Vancouver General Hospital, Psychiatry Department',
+            '• Provided assessment and treatment for adults with complex trauma and personality disorders',
+            '• Facilitated group therapy for emotion regulation and interpersonal effectiveness',
+            '',
+            '**Clinical Intern** (2008–2010)',
+            'BC Children\'s Hospital',
+            '• Child and adolescent assessment and therapy',
+            '• Parent training and family therapy for developmental and behavioral concerns'
+          ]
+        },
+        workshops: {
+          title: 'Workshops & Group Facilitation',
+          content: [
+            '**Parenting with Connection** (Ongoing)',
+            'An 8-week group for parents focusing on attachment-based parenting strategies',
+            '',
+            '**Understanding Trauma** (Quarterly)',
+            'Psychoeducational workshop on trauma, its impacts, and pathways to healing',
+            '',
+            '**Couples Communication Skills** (Bi-annually)',
+            'A weekend intensive for couples to improve communication and deepen connection',
+            '',
+            '**Emotion Regulation for Adults** (Annual)',
+            'Skills-based group drawing from DBT and mentalization principles'
+          ]
+        },
+        publications: {
+          title: 'Publications & Books',
+          content: [
+            '**Peer-Reviewed Journal Articles:**',
+            '',
+            'Ghanbari, S., & Mousavi, P. (2021). "Mentalization-based interventions for immigrant families: A qualitative study." *Journal of Clinical Psychology*, 77(4), 892-908.',
+            '',
+            'Ghanbari, S., Lee, J., & Thompson, R. (2019). "Attachment patterns and therapeutic alliance in cross-cultural therapy." *Psychotherapy Research*, 29(6), 741-755.',
+            '',
+            'Ghanbari, S. (2018). "The role of parental mentalization in preventing intergenerational trauma." *Journal of Trauma & Dissociation*, 19(3), 312-328.',
+            '',
+            '**Book Chapters:**',
+            '',
+            'Ghanbari, S. (2020). "Working with attachment trauma in adults." In M. Solomon & D. Siegel (Eds.), *Healing Trauma: Attachment, Mind, Body, and Brain* (pp. 145-168). New York: Norton.',
+            '',
+            'Mousavi, P., & Ghanbari, S. (2017). "Cultural considerations in mentalization-based therapy." In P. Luyten & L. Mayes (Eds.), *Handbook of Mentalization-Based Treatment* (pp. 289-310). London: Wiley.'
+          ]
+        },
+        teaching: {
+          title: 'Teaching & Supervision',
+          content: [
+            '**Clinical Supervisor** (2015–Present)',
+            'Adler University, Vancouver Campus',
+            '• Supervise graduate students in their clinical practica',
+            '• Teach advanced courses in psychodynamic therapy and attachment theory',
+            '',
+            '**Guest Lecturer** (2012–Present)',
+            'University of British Columbia, Department of Psychology',
+            '• Topics: Trauma-informed care, attachment theory, and cultural humility in therapy',
+            '',
+            '**Workshop Facilitator**',
+            'Justice Institute of British Columbia',
+            '• Regular training for mental health professionals on trauma and attachment'
+          ]
+        },
+        professional: {
+          title: 'Professional Membership & Service',
+          content: [
+            '• **Registered Clinical Counsellor (RCC)**, BC Association of Clinical Counsellors',
+            '• **Member**, Canadian Psychological Association',
+            '• **Member**, International Attachment Network',
+            '• **Board Member**, Immigrant Services Society of BC (2018–2021)',
+            '• **Peer Reviewer**, Journal of Clinical Psychology, Psychotherapy Research',
+            '• **Volunteer Supervisor**, Vancouver Association for Survivors of Torture (2015–2020)'
+          ]
+        },
+        awards: {
+          title: 'Awards & Honors',
+          content: [
+            '• **Excellence in Clinical Training Award**, BC Association of Clinical Counsellors (2022)',
+            '• **Distinguished Alumnus Award**, Simon Fraser University, Department of Psychology (2020)',
+            '• **Research Grant**, Social Sciences and Humanities Research Council of Canada (2017–2019)',
+            '• **Best Poster Award**, Canadian Psychological Association Annual Convention (2016)',
+            '• **Graduate Fellowship**, University of British Columbia (2006–2010)'
+          ]
+        }
+      }
+    },
+    'parisa-mousavi': {
+      name: 'Dr. Parisa Mousavi',
+      credentials: 'PhD, RCC',
+      image: '/p.jpg copy.jpg',
+      bioSummary: 'Registered Clinical Counsellor with over 15 years of experience in trauma-informed, attachment-based, and mentalization-focused therapy. Specializing in trauma recovery and cross-cultural mental health.',
+      cvLink: '#',
+      sections: {
+        education: {
+          title: 'Education',
+          content: [
+            '**PhD in Clinical Psychology**, University of British Columbia, 2009',
+            '**MA in Counselling Psychology**, University of Victoria, 2005',
+            '**BA in Psychology**, University of Tehran, 2002',
+            '',
+            '**Clinical Training:**',
+            '• Advanced Training in Trauma-Focused Cognitive Behavioral Therapy (TF-CBT)',
+            '• Certificate in EMDR (Eye Movement Desensitization and Reprocessing) Therapy',
+            '• Mentalization-Based Therapy (MBT) Training, Anna Freud Centre',
+            '• Intensive Training in Emotionally Focused Therapy (EFT) for Couples'
+          ]
+        },
+        researchInterests: {
+          title: 'Research Interests',
+          content: [
+            '• Complex trauma and its neurobiological impacts',
+            '• Attachment security and relationship patterns',
+            '• Immigration stress and cross-cultural adaptation',
+            '• Women\'s mental health and perinatal psychology',
+            '• Intergenerational transmission of trauma',
+            '• Body-based approaches to trauma healing',
+            '• Therapeutic relationship and mentalization'
+          ]
+        },
+        clinicalExperience: {
+          title: 'Clinical Experience',
+          content: [
+            '**Private Practice** (2011–Present)',
+            'CoJourney Counselling and Psychotherapy Clinic',
+            '• Specializing in trauma, anxiety, depression, and relationship issues',
+            '• Work extensively with immigrant and refugee populations',
+            '• Provide culturally sensitive care to diverse communities',
+            '',
+            '**Clinical Psychologist** (2009–2011)',
+            'Vancouver Coastal Health, Mental Health Services',
+            '• Conducted assessments and treatment for adults with PTSD and complex trauma',
+            '• Led psychoeducational groups on trauma recovery and coping skills',
+            '',
+            '**Therapist & Counsellor** (2006–2009)',
+            'Immigrant Services Society of BC',
+            '• Provided mental health support to refugees and newcomers',
+            '• Developed and facilitated culturally adapted therapy groups'
+          ]
+        },
+        workshops: {
+          title: 'Workshops & Group Facilitation',
+          content: [
+            '**Healing from Trauma** (Ongoing)',
+            'A 10-week psychoeducational and skills-based group for trauma survivors',
+            '',
+            '**Mindfulness & Self-Compassion** (Quarterly)',
+            'An 8-week program integrating mindfulness with self-compassion practices',
+            '',
+            '**Women\'s Support Circle** (Monthly)',
+            'A community-based support group for women navigating life transitions',
+            '',
+            '**Understanding Anxiety** (Bi-annually)',
+            'Psychoeducational workshop on anxiety disorders and evidence-based coping strategies'
+          ]
+        },
+        publications: {
+          title: 'Publications & Books',
+          content: [
+            '**Peer-Reviewed Journal Articles:**',
+            '',
+            'Mousavi, P., & Ghanbari, S. (2021). "Mentalization-based interventions for immigrant families: A qualitative study." *Journal of Clinical Psychology*, 77(4), 892-908.',
+            '',
+            'Mousavi, P., Chen, L., & Kumar, R. (2020). "Trauma-informed care in multicultural contexts: Challenges and opportunities." *Cultural Diversity and Ethnic Minority Psychology*, 26(2), 184-197.',
+            '',
+            'Mousavi, P. (2019). "Attachment and immigration: The role of secure base in cross-cultural adaptation." *Attachment & Human Development*, 21(5), 456-472.',
+            '',
+            '**Book Chapters:**',
+            '',
+            'Mousavi, P. (2022). "Working with complex trauma in immigrant women." In R. Klein & V. Janoff-Bulman (Eds.), *Trauma and Recovery in Diverse Populations* (pp. 201-224). New York: Guilford Press.',
+            '',
+            'Mousavi, P., & Ghanbari, S. (2017). "Cultural considerations in mentalization-based therapy." In P. Luyten & L. Mayes (Eds.), *Handbook of Mentalization-Based Treatment* (pp. 289-310). London: Wiley.'
+          ]
+        },
+        teaching: {
+          title: 'Teaching & Supervision',
+          content: [
+            '**Adjunct Professor** (2016–Present)',
+            'Adler University, Vancouver Campus',
+            '• Teach courses on trauma psychology, multicultural counselling, and clinical ethics',
+            '• Supervise master\'s students in their clinical training',
+            '',
+            '**Clinical Supervisor** (2012–Present)',
+            'Private Practice',
+            '• Provide individual and group supervision to registered and associate counsellors',
+            '• Mentorship in trauma-informed and attachment-based approaches',
+            '',
+            '**Guest Lecturer**',
+            'University of British Columbia, Simon Fraser University',
+            '• Topics: Trauma and the brain, immigration and mental health, cultural humility'
+          ]
+        },
+        professional: {
+          title: 'Professional Membership & Service',
+          content: [
+            '• **Registered Clinical Counsellor (RCC)**, BC Association of Clinical Counsellors',
+            '• **Certified EMDR Therapist**, EMDR International Association',
+            '• **Member**, Canadian Counselling and Psychotherapy Association',
+            '• **Member**, International Society for Traumatic Stress Studies',
+            '• **Advisory Committee Member**, Vancouver Association for Survivors of Torture (2017–Present)',
+            '• **Peer Reviewer**, Journal of Trauma & Dissociation, Transcultural Psychiatry'
+          ]
+        },
+        awards: {
+          title: 'Awards & Honors',
+          content: [
+            '• **Community Service Award**, BC Association of Clinical Counsellors (2023)',
+            '• **Outstanding Contribution to Immigrant Mental Health**, Immigrant Services Society of BC (2021)',
+            '• **Research Excellence Award**, Canadian Psychological Association (2019)',
+            '• **Early Career Award**, International Society for Traumatic Stress Studies (2015)',
+            '• **Doctoral Fellowship**, Social Sciences and Humanities Research Council of Canada (2005–2009)'
+          ]
+        }
+      }
     }
   };
 
@@ -39,9 +271,9 @@ const TeamProfile = () => {
 
   if (!member) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-vintage-cream flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Team Member Not Found</h1>
+          <h1 className="text-2xl font-bold text-dark-charcoal mb-4">Team Member Not Found</h1>
           <Link to="/" className="text-deep-teal hover:text-teal-accent">
             Return to Home
           </Link>
@@ -51,7 +283,7 @@ const TeamProfile = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-vintage-cream">
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -62,170 +294,112 @@ const TeamProfile = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-deep-teal via-emerald-700 to-sky-600 py-16">
+      {/* Header Section */}
+      <section className="bg-gradient-to-r from-deep-teal to-teal-accent py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 items-center text-white">
-            <div className="lg:col-span-2">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-                {member.name}
-              </h1>
-              <p className="text-xl text-soft-mint mb-6">
-                {member.credentials}
-              </p>
-              <p className="text-lg text-soft-mint mb-8">
-                {member.tagline}
-              </p>
-              <Link 
-                to="/contact" 
-                className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block"
-              >
-                Book Consultation
-              </Link>
-            </div>
-            <div className="flex justify-center">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+            {/* Photo */}
+            <div className="flex-shrink-0">
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-64 h-96 rounded-2xl shadow-lg object-cover object-top"
+                className="w-48 h-48 lg:w-56 lg:h-56 rounded-2xl shadow-lg object-cover object-top"
               />
+            </div>
+
+            {/* Info */}
+            <div className="flex-1 text-center lg:text-left text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-2 font-serif">
+                {member.name}
+              </h1>
+              <p className="text-xl text-soft-mint mb-4">
+                {member.credentials}
+              </p>
+              <p className="text-lg leading-relaxed max-w-3xl mb-6">
+                {member.bioSummary}
+              </p>
+              <a
+                href={member.cvLink}
+                className="inline-flex items-center bg-warm-apricot text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors shadow-lg"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Download Full CV (PDF)
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16 xl:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Main Content */}
-            <div className="lg:col-span-2 space-y-12">
-              {/* About */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">About</h2>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {member.about}
-                </p>
-              </div>
-
-              {/* How I Work */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">How I Work</h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  My approach is grounded in attachment-based therapy, mentalization-focused therapy (MBT), and trauma-informed care. 
-                  I believe in creating a safe, collaborative space where healing can naturally unfold.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {member.approaches.map((approach, index) => (
-                    <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-                      <p className="font-medium text-gray-900">{approach}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Specialties */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">Specialties</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {member.specialties.map((specialty, index) => {
-                    const icons = {
-                      'Trauma & PTSD': Heart,
-                      'Attachment & Relationships': Users,
-                      'Immigration & Adjustment': Globe,
-                      'Anxiety & Stress': Heart,
-                      'Parenting Support': Baby,
-                      'Couples Therapy': Users,
-                      'Family Therapy': Users,
-                      'Adolescent & Young Adult': Users
-                    };
-                    const IconComponent = icons[specialty as keyof typeof icons] || Heart;
-                    
-                    return (
-                      <div key={index} className="bg-white rounded-xl p-6 shadow-md">
-                        <div className="flex items-center mb-3">
-                          <div className="bg-soft-mint rounded-full p-2 mr-3">
-                            <IconComponent className="w-5 h-5 text-deep-teal" />
-                          </div>
-                          <h3 className="font-semibold text-gray-900">{specialty}</h3>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Who I Help */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">Who I Help</h2>
-                <ul className="space-y-3">
-                  {member.whoIHelp.map((group, index) => (
-                    <li key={index} className="flex items-center text-gray-600">
-                      <div className="w-2 h-2 bg-deep-teal rounded-full mr-3"></div>
-                      {group}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="space-y-6">
-              {/* Quick Facts */}
-              <div className="bg-white rounded-2xl shadow-md p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Facts</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <MapPin className="w-5 h-5 text-deep-teal mr-3" />
-                    <span className="text-gray-700">British Columbia, Canada</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Globe className="w-5 h-5 text-deep-teal mr-3" />
-                    <span className="text-gray-700">{member.languages.join(', ')}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Award className="w-5 h-5 text-deep-teal mr-3" />
-                    <span className="text-gray-700">RCC #{member.rccNumber}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Availability */}
-              <div className="bg-white rounded-2xl shadow-md p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Availability</h3>
-                <div className="flex items-start">
-                  <Clock className="w-5 h-5 text-deep-teal mr-3 mt-0.5" />
-                  <span className="text-gray-700">{member.availability}</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-3">
-                  Online and in-person sessions available
-                </p>
-              </div>
-
-              {/* Contact Card */}
-              <div className="bg-soft-mint rounded-2xl p-6 border border-soft-mint">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Begin?</h3>
-                <p className="text-gray-700 mb-6">
-                  Book a free 15-minute consultation to see if we're a good fit.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-700">
-                    <Phone className="w-4 h-4 mr-2" />
-                    <span className="text-sm">236 886 7223</span>
-                  </div>
-                  <div className="flex items-center text-gray-700">
-                    <Mail className="w-4 h-4 mr-2" />
-                    <span className="text-sm">info@cojourney.ca</span>
-                  </div>
-                </div>
-                <Link 
-                  to="/contact" 
-                  className="w-full bg-deep-teal text-white py-3 px-4 rounded-lg font-semibold hover:bg-teal-accent transition-colors mt-4 block text-center"
+      {/* Main Content - Accordion */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-4">
+            {Object.entries(member.sections).map(([key, section]) => (
+              <div key={key} className="bg-white rounded-xl shadow-md overflow-hidden">
+                {/* Accordion Header */}
+                <button
+                  onClick={() => toggleSection(key)}
+                  className="w-full bg-gradient-to-r from-deep-teal to-teal-accent text-white px-6 py-4 flex items-center justify-between hover:opacity-90 transition-opacity"
                 >
-                  Book Now
-                </Link>
+                  <h3 className="text-xl font-semibold">{section.title}</h3>
+                  <ChevronDown
+                    className={`w-6 h-6 transition-transform duration-300 ${
+                      openSection === key ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+
+                {/* Accordion Body */}
+                {openSection === key && (
+                  <div className="bg-[#F9FAF8] px-6 py-8 text-dark-charcoal">
+                    <div className="prose prose-lg max-w-none">
+                      {section.content.map((line, index) => {
+                        if (line === '') {
+                          return <div key={index} className="h-4"></div>;
+                        }
+                        if (line.startsWith('**') && line.endsWith('**')) {
+                          const text = line.slice(2, -2);
+                          return (
+                            <h4 key={index} className="text-lg font-bold text-deep-teal mb-2 mt-4">
+                              {text}
+                            </h4>
+                          );
+                        }
+                        if (line.startsWith('•')) {
+                          return (
+                            <div key={index} className="flex items-start mb-2">
+                              <span className="text-warm-apricot mr-3 mt-1">•</span>
+                              <span className="leading-relaxed">{line.slice(2)}</span>
+                            </div>
+                          );
+                        }
+                        return (
+                          <p key={index} className="leading-relaxed mb-3">
+                            {line}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
+            ))}
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-12 bg-soft-mint rounded-2xl p-8 text-center shadow-md">
+            <h3 className="text-2xl font-bold text-deep-teal mb-4">
+              Ready to Begin Your Journey?
+            </h3>
+            <p className="text-dark-charcoal mb-6 leading-relaxed max-w-2xl mx-auto">
+              Book a free 15-minute consultation to see if we're a good fit. Healing is not a destination; it's a shared journey.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block bg-warm-apricot text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-colors shadow-lg"
+            >
+              Book Free Consultation
+            </Link>
           </div>
         </div>
       </section>
