@@ -24,13 +24,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 bg-vintage-cream">
+    <section id="contact" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-vintage-darkest mb-4">
+          <h2 className="text-4xl font-bold text-deep-teal mb-4">
             Start Your Journey Today
           </h2>
-          <p className="text-xl text-vintage-green">
+          <p className="text-xl text-dark-charcoal">
             Book a free consultation and take the first step toward healing.
           </p>
         </div>
@@ -38,48 +38,48 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-vintage-darkest mb-6">
+            <h3 className="text-2xl font-bold text-deep-teal mb-6">
               Contact Information
             </h3>
             
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <MapPin className="w-6 h-6 text-vintage-green" />
+                <div className="bg-soft-mint rounded-full p-3 mr-4">
+                  <MapPin className="w-6 h-6 text-deep-teal" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Office Address</h4>
+                  <h4 className="font-semibold text-dark-charcoal mb-1">Office Address</h4>
                   <p className="text-black">British Columbia, Canada<br />In-person and online sessions available</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <Phone className="w-6 h-6 text-vintage-orange" />
+                <div className="bg-soft-mint rounded-full p-3 mr-4">
+                  <Phone className="w-6 h-6 text-warm-apricot" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Phone Number</h4>
+                  <h4 className="font-semibold text-dark-charcoal mb-1">Phone Number</h4>
                   <p className="text-black">236 886 7223</p>
                   <p className="text-sm text-gray-500">Professional support available</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <Mail className="w-6 h-6 text-vintage-plum" />
+                <div className="bg-soft-mint rounded-full p-3 mr-4">
+                  <Mail className="w-6 h-6 text-deep-teal" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Email</h4>
+                  <h4 className="font-semibold text-dark-charcoal mb-1">Email</h4>
                   <p className="text-black">info@cojourney.ca</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="bg-vintage-cream rounded-full p-3 mr-4">
-                  <Clock className="w-6 h-6 text-vintage-orange" />
+                <div className="bg-soft-mint rounded-full p-3 mr-4">
+                  <Clock className="w-6 h-6 text-warm-apricot" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-vintage-darkest mb-1">Office Hours</h4>
+                  <h4 className="font-semibold text-dark-charcoal mb-1">Office Hours</h4>
                   <div className="text-black space-y-1">
                     <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                     <p>Saturday: 10:00 AM - 4:00 PM</p>
@@ -115,7 +115,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div>
-            <h3 className="text-2xl font-bold text-mystic-darkest mb-6">
+            <h3 className="text-2xl font-bold text-deep-teal mb-6">
               Book Your Free Consultation
             </h3>
             
@@ -145,7 +145,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vintage-orange focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-deep-teal focus:border-transparent transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vintage-orange focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-deep-teal focus:border-transparent transition-colors"
                     placeholder="236 886 7223"
                   />
                 </div>
@@ -173,7 +173,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vintage-orange focus:border-transparent transition-colors"
+                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-deep-teal focus:border-transparent transition-colors"
                   >
                     <option value="">Select a service</option>
                     <option value="individual">Individual Therapy</option>
@@ -200,15 +200,15 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-vintage-orange text-white py-4 px-6 rounded-lg hover:bg-vintage-green transition-colors flex items-center justify-center group"
+                className="w-full bg-warm-apricot text-white py-4 px-6 rounded-lg hover:bg-teal-accent transition-colors flex items-center justify-center group"
               >
                 <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
                 Book Free Consultation
               </button>
             </form>
 
-            <div className="mt-6 p-4 bg-vintage-cream rounded-lg">
-              <p className="text-sm text-vintage-darkest">
+            <div className="mt-6 p-4 bg-soft-mint rounded-lg">
+              <p className="text-sm text-dark-charcoal">
                 <strong>Note:</strong> In-person and online sessions available across British Columbia. 
                 Confidential, compassionate, and tailored to you. We typically respond within 24 hours.
               </p>

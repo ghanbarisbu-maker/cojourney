@@ -21,10 +21,10 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 xl:py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 xl:py-24 bg-vintage-cream relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <svg width="100%" height="100%" viewBox="0 0 100 100" className="absolute inset-0 text-emerald-300">
+        <svg width="100%" height="100%" viewBox="0 0 100 100" className="absolute inset-0 text-soft-mint">
           <defs>
             <pattern id="team-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
               <circle cx="10" cy="10" r="1" fill="currentColor" />
@@ -36,7 +36,7 @@ const TeamSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-deep-teal mb-4 font-serif">
             Our Team
           </h2>
         </div>
@@ -52,10 +52,10 @@ const TeamSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                <h3 className="text-xl font-bold text-dark-charcoal mb-1">
                   {member.name}
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-dark-charcoal/70 mb-4">
                   {member.credentials}
                 </p>
                 
@@ -64,7 +64,7 @@ const TeamSection = () => {
                     {member.focusTags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm rounded-full flex items-center"
+                        className="px-3 py-1 bg-soft-mint text-deep-teal text-sm rounded-full flex items-center"
                       >
                         <Tag className="w-3 h-3 mr-1" />
                         {tag}
@@ -73,7 +73,7 @@ const TeamSection = () => {
                   </div>
                 </div>
 
-                <Link to={`/team/${member.slug}`} className="w-full bg-emerald-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center justify-center">
+                <Link to={`/team/${member.slug}`} className="w-full bg-deep-teal text-white py-3 px-4 rounded-lg font-semibold hover:bg-teal-accent transition-colors flex items-center justify-center">
                   <User className="w-4 h-4 mr-2" />
                   View Profile
                 </Link>

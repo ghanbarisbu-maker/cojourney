@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const ApproachPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-vintage-cream">
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
+          <Link to="/" className="flex items-center text-deep-teal hover:text-teal-accent transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -16,12 +16,12 @@ const ApproachPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16">
+      <section className="bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
             Our Therapeutic Approach
           </h1>
-          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
+          <p className="text-xl text-soft-mint max-w-3xl mx-auto">
             Trauma-informed, attachment-based, and mentalization-focused care that honors your unique journey.
           </p>
         </div>
@@ -39,8 +39,8 @@ const ApproachPage = () => {
           <div className="space-y-12">
             <div className="bg-white rounded-2xl shadow-md p-8">
               <div className="flex items-start gap-6">
-                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
-                  <Shield className="w-8 h-8 text-emerald-600" />
+                <div className="bg-soft-mint rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Shield className="w-8 h-8 text-deep-teal" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Trauma-Informed Care</h3>
@@ -73,8 +73,8 @@ const ApproachPage = () => {
 
             <div className="bg-white rounded-2xl shadow-md p-8">
               <div className="flex items-start gap-6">
-                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
-                  <Heart className="w-8 h-8 text-emerald-600" />
+                <div className="bg-soft-mint rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Heart className="w-8 h-8 text-deep-teal" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Attachment-Based Therapy</h3>
@@ -107,8 +107,8 @@ const ApproachPage = () => {
 
             <div className="bg-white rounded-2xl shadow-md p-8">
               <div className="flex items-start gap-6">
-                <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 flex-shrink-0">
-                  <Brain className="w-8 h-8 text-emerald-600" />
+                <div className="bg-soft-mint rounded-full p-4 w-16 h-16 flex-shrink-0">
+                  <Brain className="w-8 h-8 text-deep-teal" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Mentalization-Based Therapy</h3>
@@ -157,8 +157,8 @@ const ApproachPage = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="bg-emerald-100 rounded-full p-2 mr-4 mt-1">
-                    <Users className="w-4 h-4 text-emerald-600" />
+                  <div className="bg-soft-mint rounded-full p-2 mr-4 mt-1">
+                    <Users className="w-4 h-4 text-deep-teal" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Collaborative Partnership</h3>
@@ -167,8 +167,8 @@ const ApproachPage = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-emerald-100 rounded-full p-2 mr-4 mt-1">
-                    <Heart className="w-4 h-4 text-emerald-600" />
+                  <div className="bg-soft-mint rounded-full p-2 mr-4 mt-1">
+                    <Heart className="w-4 h-4 text-deep-teal" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Compassionate Care</h3>
@@ -177,8 +177,8 @@ const ApproachPage = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-emerald-100 rounded-full p-2 mr-4 mt-1">
-                    <Brain className="w-4 h-4 text-emerald-600" />
+                  <div className="bg-soft-mint rounded-full p-2 mr-4 mt-1">
+                    <Brain className="w-4 h-4 text-deep-teal" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Evidence-Based Methods</h3>
@@ -200,24 +200,24 @@ const ApproachPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-emerald-600 to-sky-600">
+      <section className="py-16 bg-gradient-to-r from-deep-teal to-teal-accent">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8">
+          <p className="text-xl text-soft-mint mb-8">
             Experience our compassionate, evidence-based approach with a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/contact" 
-              className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"
+              className="bg-warm-apricot text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89551] transition-colors"
             >
               Book Free Consultation
             </Link>
             <Link 
               to="/" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-700 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-deep-teal transition-colors"
             >
               Learn More About Our Services
             </Link>

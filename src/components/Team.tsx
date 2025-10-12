@@ -20,13 +20,13 @@ export const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-12 bg-vintage-cream">
+    <section id="team" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-vintage-darkest mb-4">
+          <h2 className="text-4xl font-bold text-deep-teal mb-4">
             Meet Our Counsellors
           </h2>
-          <p className="text-xl text-vintage-green max-w-3xl mx-auto">
+          <p className="text-xl text-dark-charcoal max-w-3xl mx-auto">
             Experienced, compassionate, and committed to your journey.
           </p>
         </div>
@@ -42,14 +42,14 @@ export const Team = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-vintage-darkest mb-2">
+                <h3 className="text-lg font-bold text-dark-charcoal mb-2">
                   {member.name}
                 </h3>
-                <p className="text-vintage-green mb-3">
+                <p className="text-deep-teal mb-3">
                   {member.role}
                 </p>
                 
-                <div className="flex items-center text-vintage-green mb-2">
+                <div className="flex items-center text-deep-teal mb-2">
                   <Timer className="w-4 h-4 mr-2" />
                   <span className="text-sm font-medium">{member.experience} experience</span>
                 </div>
@@ -60,7 +60,7 @@ export const Team = () => {
                     {member.specialties.map((specialty, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-vintage-cream text-vintage-orange text-xs rounded-full"
+                        className="px-3 py-1 bg-soft-mint text-deep-teal text-xs rounded-full"
                       >
                         {specialty}
                       </span>
@@ -68,7 +68,7 @@ export const Team = () => {
                   </div>
                 </div>
 
-                <button className="w-full bg-vintage-orange text-white py-2 px-4 rounded-lg hover:bg-vintage-green transition-colors duration-200 flex items-center justify-center">
+                <button className="w-full bg-warm-apricot text-white py-2 px-4 rounded-lg hover:bg-teal-accent transition-colors duration-200 flex items-center justify-center">
                   <UserRound className="w-4 h-4 mr-2" />
                   View Profile
                 </button>
@@ -79,11 +79,11 @@ export const Team = () => {
 
         <div className="text-center mt-8">
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">
-            <GraduationCap className="w-12 h-12 text-vintage-orange mx-auto mb-4" />
-            <h3 className="text-3xl font-bold text-vintage-darkest mb-4">
+            <GraduationCap className="w-12 h-12 text-warm-apricot mx-auto mb-4" />
+            <h3 className="text-3xl font-bold text-deep-teal mb-4">
               Professional Excellence
             </h3>
-            <p className="text-vintage-green">
+            <p className="text-dark-charcoal">
               Our counsellors are Registered Clinical Counsellors with extensive training in 
               trauma-informed, attachment-based, and mentalization-focused approaches. We bring 
               international clinical and academic experience to support your healing journey.

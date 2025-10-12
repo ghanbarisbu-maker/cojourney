@@ -78,13 +78,13 @@ const AreasOfSupport = () => {
   ];
 
   return (
-    <section className="py-16 xl:py-24 bg-gray-50">
+    <section className="py-16 xl:py-24 bg-vintage-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-deep-teal mb-4 font-serif">
             Areas of Support
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-dark-charcoal max-w-3xl mx-auto">
             We provide specialized care across a wide range of mental health challenges.
           </p>
         </div>
@@ -111,13 +111,13 @@ const AreasOfSupport = () => {
                 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center text-center h-full justify-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-xl mb-4 group-hover:bg-white transition-colors">
-                  <IconComponent className="w-6 h-6 text-emerald-600 group-hover:text-emerald-800" />
+                <div className="flex items-center justify-center w-12 h-12 bg-soft-mint rounded-xl mb-4 group-hover:bg-white transition-colors">
+                  <IconComponent className="w-6 h-6 text-deep-teal group-hover:text-teal-accent" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2 text-center group-hover:text-white">
+                <h3 className="text-lg font-bold text-dark-charcoal mb-2 text-center group-hover:text-white">
                   {area.title}
                 </h3>
-                <p className="text-gray-600 text-sm text-center leading-relaxed group-hover:text-gray-200">
+                <p className="text-dark-charcoal/70 text-sm text-center leading-relaxed group-hover:text-gray-200">
                   {area.description}
                 </p>
                 </div>

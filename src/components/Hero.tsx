@@ -18,8 +18,8 @@ export const Hero = () => {
   ];
 
   const buttonColors = [
-    { bg: 'bg-[#20796c]', hover: 'hover:bg-[#1a6158]' },
-    { bg: 'bg-[#e98c4a]', hover: 'hover:bg-[#d47a38]' }
+    { bg: 'bg-deep-teal', hover: 'hover:bg-teal-accent' },
+    { bg: 'bg-warm-apricot', hover: 'hover:bg-[#e89551]' }
   ];
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export const Hero = () => {
             <div className="h-24 sm:h-28 lg:h-32 flex items-center mb-8">
               <h2
                 key={currentMessageIndex}
-                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-teal-100 animate-fade-in leading-tight drop-shadow-lg"
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-soft-mint animate-fade-in leading-tight drop-shadow-lg"
                 style={{
                   fontFamily: '"Playfair Display", Georgia, serif'
                 }}

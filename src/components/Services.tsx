@@ -34,22 +34,22 @@ const Services = () => {
   ];
 
   const colorClasses = {
-    blue: 'text-vintage-green bg-vintage-cream',
-    green: 'text-vintage-orange bg-vintage-cream',
-    purple: 'text-vintage-plum bg-vintage-cream',
-    orange: 'text-vintage-orange bg-vintage-cream',
-    teal: 'text-vintage-green bg-vintage-cream',
-    red: 'text-vintage-orange bg-vintage-cream'
+    blue: 'text-deep-teal bg-soft-mint',
+    green: 'text-teal-accent bg-soft-mint',
+    purple: 'text-deep-teal bg-soft-mint',
+    orange: 'text-warm-apricot bg-soft-mint',
+    teal: 'text-teal-accent bg-soft-mint',
+    red: 'text-warm-apricot bg-soft-mint'
   };
 
   return (
-    <section id="services" className="py-12 bg-vintage-cream">
+    <section id="services" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-vintage-darkest mb-4">
+          <h2 className="text-4xl font-bold text-deep-teal mb-4">
             Our Counselling Services
           </h2>
-          <p className="text-xl text-vintage-green max-w-3xl mx-auto">
+          <p className="text-xl text-dark-charcoal max-w-3xl mx-auto">
             Personalized therapy to support individuals, couples, and families through life's challenges.
           </p>
         </div>
@@ -88,7 +88,7 @@ const Services = () => {
                 </h3>
                   </div>
                   <div>
-                <Link to={service.route} className="mt-4 text-vintage-orange font-semibold hover:text-white transition-colors inline-block">
+                <Link to={service.route} className="mt-4 text-warm-apricot font-semibold hover:text-white transition-colors inline-block">
                   Learn More →
                 </Link>
                   </div>
@@ -102,7 +102,7 @@ const Services = () => {
           <p className="text-gray-600 mb-6">
             Ready to start your healing journey?
           </p>
-          <button className="bg-vintage-orange text-white px-8 py-3 rounded-full hover:bg-vintage-green transition-colors">
+          <button className="bg-warm-apricot text-white px-8 py-3 rounded-full hover:bg-teal-accent transition-colors">
             Schedule a Free Consultation
           </button>
         </div>

@@ -12,10 +12,10 @@ const Header = () => {
         <div className="flex justify-between items-center py-3">
           <div className="flex items-center">
             <Link to="/" className="flex flex-col group">
-              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-none mb-1.5 transition-colors">
-                Co<span className="text-vintage-orange group-hover:text-vintage-green transition-colors">Journey</span>
+              <h1 className="text-2xl lg:text-3xl font-bold text-dark-charcoal leading-none mb-1.5 transition-colors">
+                Co<span className="text-warm-apricot group-hover:text-deep-teal transition-colors">Journey</span>
               </h1>
-              <p className="text-base font-bold text-gray-900 leading-tight">
+              <p className="text-base font-bold text-dark-charcoal leading-tight">
                 Counselling and Psychotherapy Clinic
               </p>
             </Link>
@@ -23,14 +23,14 @@ const Header = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Home</a>
-            <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Services</a>
-            <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Areas</a>
-            <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Approach</Link>
-            <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Team</a>
-            <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Fees</Link>
-            <Link to="/contact" className="text-gray-900 hover:text-emerald-600 transition-colors font-medium">Contact</Link>
-            <Link to="/contact" className="bg-vintage-orange text-white px-5 py-2 rounded-full hover:bg-vintage-green transition-colors whitespace-nowrap text-sm lg:text-base">
+            <a href="/" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Home</a>
+            <a href="/#services" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Services</a>
+            <a href="/#areas" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Areas</a>
+            <Link to="/approach" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Approach</Link>
+            <a href="/#team" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Team</a>
+            <Link to="/fees" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Fees</Link>
+            <Link to="/contact" className="text-dark-charcoal hover:text-deep-teal transition-colors font-medium">Contact</Link>
+            <Link to="/contact" className="bg-warm-apricot text-white px-5 py-2 rounded-full hover:bg-teal-accent transition-colors whitespace-nowrap text-sm lg:text-base">
               Book Appointment
             </Link>
           </div>
@@ -39,7 +39,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-vintage-green hover:text-vintage-orange"
+              className="text-deep-teal hover:text-warm-apricot"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -50,14 +50,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <a href="/" className="text-gray-900 hover:text-emerald-600 transition-colors">Home</a>
-              <a href="/#services" className="text-gray-900 hover:text-emerald-600 transition-colors">Services</a>
-              <a href="/#areas" className="text-gray-900 hover:text-emerald-600 transition-colors">Areas</a>
-              <Link to="/approach" className="text-gray-900 hover:text-emerald-600 transition-colors">Approach</Link>
-              <a href="/#team" className="text-gray-900 hover:text-emerald-600 transition-colors">Team</a>
-              <Link to="/fees" className="text-gray-900 hover:text-emerald-600 transition-colors">Fees</Link>
-              <Link to="/contact" className="text-gray-900 hover:text-emerald-600 transition-colors">Contact</Link>
-              <Link to="/contact" className="bg-vintage-orange text-white px-6 py-2 rounded-full hover:bg-vintage-green transition-colors w-fit">
+              <a href="/" className="text-dark-charcoal hover:text-deep-teal transition-colors">Home</a>
+              <a href="/#services" className="text-dark-charcoal hover:text-deep-teal transition-colors">Services</a>
+              <a href="/#areas" className="text-dark-charcoal hover:text-deep-teal transition-colors">Areas</a>
+              <Link to="/approach" className="text-dark-charcoal hover:text-deep-teal transition-colors">Approach</Link>
+              <a href="/#team" className="text-dark-charcoal hover:text-deep-teal transition-colors">Team</a>
+              <Link to="/fees" className="text-dark-charcoal hover:text-deep-teal transition-colors">Fees</Link>
+              <Link to="/contact" className="text-dark-charcoal hover:text-deep-teal transition-colors">Contact</Link>
+              <Link to="/contact" className="bg-warm-apricot text-white px-6 py-2 rounded-full hover:bg-teal-accent transition-colors w-fit">
                 Book Appointment
               </Link>
             </div>

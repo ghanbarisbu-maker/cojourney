@@ -42,7 +42,7 @@ const TeamProfile = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Team Member Not Found</h1>
-          <Link to="/" className="text-emerald-600 hover:text-emerald-700">
+          <Link to="/" className="text-deep-teal hover:text-teal-accent">
             Return to Home
           </Link>
         </div>
@@ -55,7 +55,7 @@ const TeamProfile = () => {
       {/* Back Navigation */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center text-emerald-600 hover:text-emerald-700 transition-colors">
+          <Link to="/" className="flex items-center text-deep-teal hover:text-teal-accent transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
@@ -63,22 +63,22 @@ const TeamProfile = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-800 via-emerald-700 to-sky-600 py-16">
+      <section className="bg-gradient-to-br from-deep-teal via-emerald-700 to-sky-600 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 items-center text-white">
             <div className="lg:col-span-2">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
                 {member.name}
               </h1>
-              <p className="text-xl text-emerald-100 mb-6">
+              <p className="text-xl text-soft-mint mb-6">
                 {member.credentials}
               </p>
-              <p className="text-lg text-emerald-100 mb-8">
+              <p className="text-lg text-soft-mint mb-8">
                 {member.tagline}
               </p>
               <Link 
                 to="/contact" 
-                className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-colors inline-block"
+                className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block"
               >
                 Book Consultation
               </Link>
@@ -144,8 +144,8 @@ const TeamProfile = () => {
                     return (
                       <div key={index} className="bg-white rounded-xl p-6 shadow-md">
                         <div className="flex items-center mb-3">
-                          <div className="bg-emerald-100 rounded-full p-2 mr-3">
-                            <IconComponent className="w-5 h-5 text-emerald-600" />
+                          <div className="bg-soft-mint rounded-full p-2 mr-3">
+                            <IconComponent className="w-5 h-5 text-deep-teal" />
                           </div>
                           <h3 className="font-semibold text-gray-900">{specialty}</h3>
                         </div>
@@ -161,7 +161,7 @@ const TeamProfile = () => {
                 <ul className="space-y-3">
                   {member.whoIHelp.map((group, index) => (
                     <li key={index} className="flex items-center text-gray-600">
-                      <div className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-deep-teal rounded-full mr-3"></div>
                       {group}
                     </li>
                   ))}
@@ -176,15 +176,15 @@ const TeamProfile = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Facts</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <MapPin className="w-5 h-5 text-emerald-600 mr-3" />
+                    <MapPin className="w-5 h-5 text-deep-teal mr-3" />
                     <span className="text-gray-700">British Columbia, Canada</span>
                   </div>
                   <div className="flex items-center">
-                    <Globe className="w-5 h-5 text-emerald-600 mr-3" />
+                    <Globe className="w-5 h-5 text-deep-teal mr-3" />
                     <span className="text-gray-700">{member.languages.join(', ')}</span>
                   </div>
                   <div className="flex items-center">
-                    <Award className="w-5 h-5 text-emerald-600 mr-3" />
+                    <Award className="w-5 h-5 text-deep-teal mr-3" />
                     <span className="text-gray-700">RCC #{member.rccNumber}</span>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const TeamProfile = () => {
               <div className="bg-white rounded-2xl shadow-md p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Availability</h3>
                 <div className="flex items-start">
-                  <Clock className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
+                  <Clock className="w-5 h-5 text-deep-teal mr-3 mt-0.5" />
                   <span className="text-gray-700">{member.availability}</span>
                 </div>
                 <p className="text-sm text-gray-500 mt-3">
@@ -203,7 +203,7 @@ const TeamProfile = () => {
               </div>
 
               {/* Contact Card */}
-              <div className="bg-emerald-50 rounded-2xl p-6 border border-emerald-200">
+              <div className="bg-soft-mint rounded-2xl p-6 border border-soft-mint">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Begin?</h3>
                 <p className="text-gray-700 mb-6">
                   Book a free 15-minute consultation to see if we're a good fit.
@@ -220,7 +220,7 @@ const TeamProfile = () => {
                 </div>
                 <Link 
                   to="/contact" 
-                  className="w-full bg-emerald-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-emerald-700 transition-colors mt-4 block text-center"
+                  className="w-full bg-deep-teal text-white py-3 px-4 rounded-lg font-semibold hover:bg-teal-accent transition-colors mt-4 block text-center"
                 >
                   Book Now
                 </Link>

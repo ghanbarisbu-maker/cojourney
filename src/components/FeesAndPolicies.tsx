@@ -34,7 +34,7 @@ const FeesAndPolicies = () => {
     <section className="py-16 xl:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-deep-teal mb-4 font-serif">
             Fees & Policies
           </h2>
         </div>
@@ -48,14 +48,14 @@ const FeesAndPolicies = () => {
                 const IconComponent = fee.icon;
                 return (
                   <div key={index} className="bg-gray-50 rounded-2xl p-6 flex items-center">
-                    <div className="bg-emerald-100 rounded-full p-3 mr-4">
-                      <IconComponent className="w-6 h-6 text-emerald-600" />
+                    <div className="bg-soft-mint rounded-full p-3 mr-4">
+                      <IconComponent className="w-6 h-6 text-deep-teal" />
                     </div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-900">{fee.service}</h4>
                       <p className="text-gray-600 text-sm">({fee.duration})</p>
                     </div>
-                    <div className="text-xl font-bold text-emerald-600">
+                    <div className="text-xl font-bold text-deep-teal">
                       {fee.price}
                     </div>
                   </div>
@@ -63,9 +63,9 @@ const FeesAndPolicies = () => {
               })}
             </div>
             
-            <div className="bg-emerald-50 rounded-2xl p-6 mb-8">
+            <div className="bg-soft-mint rounded-2xl p-6 mb-8">
               <div className="flex items-center mb-3">
-                <FileText className="w-5 h-5 text-emerald-600 mr-2" />
+                <FileText className="w-5 h-5 text-deep-teal mr-2" />
                 <h4 className="font-semibold text-gray-900">Insurance & Receipts</h4>
               </div>
               <p className="text-gray-700">
@@ -73,7 +73,7 @@ const FeesAndPolicies = () => {
               </p>
             </div>
 
-            <Link to="/contact" className="w-full bg-emerald-600 text-white py-4 px-8 rounded-lg font-semibold hover:bg-emerald-700 transition-colors inline-block text-center">
+            <Link to="/contact" className="w-full bg-warm-apricot text-white py-4 px-8 rounded-lg font-semibold hover:bg-teal-accent transition-colors inline-block text-center">
               Book a Free Consultation
             </Link>
           </div>
@@ -81,10 +81,10 @@ const FeesAndPolicies = () => {
           {/* Policies Section */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">Cancellation Policy</h3>
-            <div className="bg-gray-50 rounded-2xl p-8 border-l-4 border-emerald-600">
+            <div className="bg-gray-50 rounded-2xl p-8 border-l-4 border-deep-teal">
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Clock className="w-6 h-6 text-emerald-600 mr-3 mt-1" />
+                  <Clock className="w-6 h-6 text-deep-teal mr-3 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">≥24 Hours Notice</h4>
                     <p className="text-gray-700">No charge for cancellations made 24 hours or more in advance.</p>
