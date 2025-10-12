@@ -89,41 +89,37 @@ const AreasOfSupport = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {areas.map((area, index) => {
             const IconComponent = area.icon;
             return (
               <Link
                 key={index}
                 to={`/areas/${area.slug}`}
-                className="relative bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group overflow-hidden min-h-[280px]"
+                className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 group relative overflow-hidden min-h-[200px] flex flex-col justify-between"
               >
                 {/* Background Image */}
                 <div
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   style={{
                     backgroundImage: `url("${area.backgroundImage}")`
                   }}
                 ></div>
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/60"></div>
+                <div className="absolute inset-0 bg-gray-900/70 transition-opacity duration-500 opacity-0 group-hover:opacity-100"></div>
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col justify-between h-full">
-                  <div>
-                    <div className="w-14 h-14 rounded-full bg-soft-mint flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <IconComponent className="w-8 h-8 text-deep-teal" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {area.title}
-                    </h3>
-                  </div>
-                  <div>
-                    <span className="mt-4 text-warm-apricot font-semibold hover:text-white transition-colors inline-block">
-                      Learn More →
-                    </span>
-                  </div>
+                <div className="relative z-10 flex flex-col items-center text-center h-full justify-center">
+                <div className="flex items-center justify-center w-12 h-12 bg-soft-mint rounded-xl mb-4 group-hover:bg-white transition-colors">
+                  <IconComponent className="w-6 h-6 text-deep-teal group-hover:text-teal-accent" />
+                </div>
+                <h3 className="text-lg font-bold text-dark-charcoal mb-2 text-center group-hover:text-white">
+                  {area.title}
+                </h3>
+                <p className="text-dark-charcoal/70 text-sm text-center leading-relaxed group-hover:text-gray-200">
+                  {area.description}
+                </p>
                 </div>
               </Link>
             );

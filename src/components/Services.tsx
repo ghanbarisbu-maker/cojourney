@@ -58,9 +58,8 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Link
+              <div
                 key={index}
-                to={service.route}
                 className="relative bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group overflow-hidden min-h-[280px]"
               >
                 {/* Background Image */}
@@ -81,20 +80,20 @@ const Services = () => {
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-between h-full">
                   <div>
-                    <div className={`w-14 h-14 rounded-full ${colorClasses[service.color]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                      <IconComponent className="w-8 h-8" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {service.title}
-                    </h3>
+                <div className={`w-14 h-14 rounded-full ${colorClasses[service.color]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                  <IconComponent className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  {service.title}
+                </h3>
                   </div>
                   <div>
-                    <span className="mt-4 text-warm-apricot font-semibold hover:text-white transition-colors inline-block">
-                      Learn More →
-                    </span>
+                <Link to={service.route} className="mt-4 text-warm-apricot font-semibold hover:text-white transition-colors inline-block">
+                  Learn More →
+                </Link>
                   </div>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>
