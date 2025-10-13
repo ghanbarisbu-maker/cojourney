@@ -209,40 +209,31 @@ const TeamProfile = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url("/c139e244deff0dc7f7dd28878aed53ea copy.jpg")`
+            backgroundImage: `url("${member.image}")`
           }}
         ></div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 via-gray-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/75 via-gray-900/60 to-gray-900/40"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-serif">
-                {member.name}
-              </h1>
-              <p className="text-xl md:text-2xl text-soft-mint mb-6">
-                {member.credentials}
-              </p>
-              <p className="text-lg md:text-xl text-white mb-8 max-w-xl">
-                {member.tagline}
-              </p>
-              <Link
-                to="/contact"
-                className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block shadow-lg"
-              >
-                Book Consultation
-              </Link>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full max-w-sm h-80 rounded-2xl shadow-2xl object-cover object-top"
-              />
-            </div>
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-serif text-white">
+              {member.name}
+            </h1>
+            <p className="text-xl md:text-2xl text-soft-mint mb-6">
+              {member.credentials}
+            </p>
+            <p className="text-lg md:text-xl text-white mb-8">
+              {member.tagline}
+            </p>
+            <Link
+              to="/contact"
+              className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block shadow-lg"
+            >
+              Book Consultation
+            </Link>
           </div>
         </div>
       </section>
