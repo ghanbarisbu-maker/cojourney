@@ -207,11 +207,10 @@ const TeamProfile = () => {
       <section className="relative bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url("${member.image}")`,
-            backgroundPosition: '70% top',
-            backgroundSize: 'contain'
+            backgroundPosition: 'center'
           }}
         ></div>
 
