@@ -207,14 +207,15 @@ const TeamProfile = () => {
       <section className="relative bg-gradient-to-br from-deep-teal via-teal-accent to-deep-teal overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-top bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
-            backgroundImage: `url("${member.image}")`
+            backgroundImage: `url("${member.image}")`,
+            backgroundPosition: 'right 30% top'
           }}
         ></div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/75 via-gray-900/60 to-gray-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-transparent"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
