@@ -31,7 +31,7 @@ const AreasOfSupport = () => {
       title: 'Eating Disorders & Body Image',
       description: 'Compassionate care for eating disorders and body image issues.',
       slug: 'eating-disorders-body-image',
-      backgroundImage: areaDetails['eating-disorders-body-image']?.heroImage
+      backgroundImage: '/28.jpg'
     },
     {
       icon: Baby,
