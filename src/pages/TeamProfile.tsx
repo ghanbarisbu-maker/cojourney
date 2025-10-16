@@ -94,7 +94,7 @@ const TeamProfile = () => {
     'saeed-ghanbari': {
       name: 'Saeed Ghanbari',
       credentials: 'PhD, RCC',
-      image: '/saeed-profile.jpg',
+      image: '/DSC00656.jpg.JPG',
       tagline: 'Supporting families and relationships with evidence-based care',
       about: 'Dr. Saeed Ghanbari specializes in family therapy, couples counseling, and parent support. With a background in developmental psychology, he helps families navigate challenges and build stronger connections through evidence-based therapeutic approaches.',
       specialties: ['Parenting Support', 'Couples Therapy', 'Family Therapy', 'Adolescent & Young Adult'],
