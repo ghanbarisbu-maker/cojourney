@@ -210,12 +210,12 @@ const TeamProfile = () => {
           className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url("${member.image}")`,
-            backgroundPosition: '65% center'
+            backgroundPosition: '70% 30%'
           }}
         ></div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/98 via-gray-900/85 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/75 to-gray-900/40"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
