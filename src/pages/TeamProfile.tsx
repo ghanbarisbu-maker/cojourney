@@ -226,15 +226,6 @@ const TeamProfile = () => {
             <p className="text-xl md:text-2xl text-soft-mint mb-6">
               {member.credentials}
             </p>
-            <p className="text-lg md:text-xl text-white mb-8">
-              {member.tagline}
-            </p>
-            <Link
-              to="/contact"
-              className="bg-white text-teal-accent px-8 py-4 rounded-lg font-semibold hover:bg-soft-mint transition-colors inline-block shadow-lg"
-            >
-              Book Consultation
-            </Link>
           </div>
         </div>
       </section>
