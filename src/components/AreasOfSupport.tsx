@@ -10,7 +10,7 @@ const AreasOfSupport = () => {
       title: 'Trauma & PTSD',
       description: 'Healing from traumatic experiences with specialized care.',
       slug: 'trauma-ptsd',
-      backgroundImage: areaDetails['trauma-ptsd']?.heroImage
+      backgroundImage: '/23.jpg'
     },
     {
       icon: Brain,
@@ -45,7 +45,7 @@ const AreasOfSupport = () => {
       title: 'Attachment & Relationships',
       description: 'Building secure attachments and healthy relationships.',
       slug: 'attachment-relationships',
-      backgroundImage: areaDetails['attachment-relationships']?.heroImage
+      backgroundImage: '/24.jpg'
     },
     {
       icon: Baby,
@@ -66,14 +66,14 @@ const AreasOfSupport = () => {
       title: 'Immigration & Adjustment',
       description: 'Support for newcomers navigating life transitions.',
       slug: 'immigration-adjustment',
-      backgroundImage: areaDetails['immigration-adjustment']?.heroImage
+      backgroundImage: '/27.jpg'
     },
     {
       icon: Flower2,
       title: 'Grief & Loss',
       description: 'Compassionate support through life\'s difficult transitions.',
       slug: 'grief-loss',
-      backgroundImage: areaDetails['grief-loss']?.heroImage
+      backgroundImage: '/25.jpg'
     }
   ];
 
