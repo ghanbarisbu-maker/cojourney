@@ -76,21 +76,18 @@ export const Hero = () => {
               </h2>
             </div>
 
-            <p className="text-xl sm:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed font-light max-w-3xl drop-shadow-md">
-              Trauma-informed, attachment-based, and mentalization-focused care.
-            </p>
 
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6">
               <Link
                 to="/contact"
-                className={`inline-flex items-center justify-center ${buttonColors[currentImageIndex].bg} ${buttonColors[currentImageIndex].hover} text-white px-10 py-5 rounded-full font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 text-lg sm:text-xl`}
+                className={`inline-flex items-center justify-center ${buttonColors[currentImageIndex].bg} ${buttonColors[currentImageIndex].hover} text-white px-5 py-2.5 rounded-full font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 text-base sm:text-lg`}
               >
                 Book a Free Consultation
-                <ArrowRight className="ml-3 w-6 h-6" />
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 to="/approach"
-                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-10 py-5 rounded-full font-semibold transition-all duration-300 text-lg sm:text-xl"
+                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-5 py-2.5 rounded-full font-semibold transition-all duration-300 text-base sm:text-lg"
               >
                 Explore Our Approach
               </Link>
