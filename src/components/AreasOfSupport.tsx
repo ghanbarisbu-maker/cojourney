@@ -100,7 +100,7 @@ const AreasOfSupport = () => {
               >
                 {/* Background Image */}
                 <div
-                  className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                  className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   style={{
                     backgroundImage: `url("${area.backgroundImage}")`
                   }}
