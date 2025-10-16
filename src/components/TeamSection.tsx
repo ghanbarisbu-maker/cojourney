@@ -14,7 +14,7 @@ const TeamSection = () => {
     {
       name: 'Saeed Ghanbari',
       credentials: 'PhD, RCC',
-      image: '/saeed-profile.jpg',
+      image: '/DSC00656.jpg.JPG',
       focusTags: ['Parenting', 'Relationships', 'Young Adults'],
       slug: 'saeed-ghanbari'
     }
