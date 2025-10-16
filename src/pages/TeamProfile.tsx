@@ -210,7 +210,7 @@ const TeamProfile = () => {
           className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url("${member.image}")`,
-            backgroundPosition: '70% 30%'
+            backgroundPosition: '70% 45%'
           }}
         ></div>
 
